@@ -1,5 +1,9 @@
 @import '../../index.scss';
 
+.pagination {
+  --bs-pagination-active-bg: $tertiary !important;
+  --bs-pagination-active-border-color: $tertiary !important;
+}
 .page-item.active {
     background: $tertiary !important;
     border-color: $tertiary !important;

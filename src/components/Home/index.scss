@@ -1,4 +1,3 @@
-@import './AboutUs.scss';
 @import './Services.scss';
 @import '../../index.scss';
 
@@ -33,24 +32,6 @@
         color: rgba(255, 255, 255, 0.6);
         margin-bottom: 50px;
         font-size: 24px;
-    }
-  
-    .hero .btn-get-started {
-        font-family: "Jost", sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-        letter-spacing: 1px;
-        display: inline-block;
-        padding: 10px 28px 11px 28px;
-        border-radius: 50px;
-        transition: 0.5s;
-        margin: 10px 0 0 0;
-        color: #fff;
-        background: #47b2e4;
-  }
-  
-    .hero .btn-get-started:hover {
-        background: #209dd8;
     }
   
     .hero .animated {

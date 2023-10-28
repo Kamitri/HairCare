@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react';
 import { useState } from 'react'
-import { Card, Container } from 'react-bootstrap'
+import { Card, Col, Container, Row } from 'react-bootstrap'
 import { Rating } from '@mui/material';
 
 function SortFilterOption({ productData, setProductList }) {
@@ -55,8 +55,10 @@ function SortFilterOption({ productData, setProductList }) {
     }
 
     return (
-        <Container style={{minWidth: '190px'}}>
-            <Card className='mb-4'>
+        <Container>
+            <Row lg={12}>
+                <Col>
+                    <Card className='mb-4'>
             <Card.Header>Filter Results</Card.Header>
             <select onChange={handleSortByChange} name='products-filter' id='products-filter'>
                 <option disabled selected value>-- Select an option --</option>
@@ -69,25 +71,29 @@ function SortFilterOption({ productData, setProductList }) {
                     <option key='rating-descending' value='rating-descending'>Rating Descending</option>
                 </optgroup>
             </select>
-            </Card>
-
-            <Card className=''>
-                <Card.Header>Sort Results</Card.Header>
-                <div className='d-flex flex-column p-3'>
-                    <label for='product-name'>Find by name:</label>
-                    <input type='text' id='product-name' onChange={handleNameQueryChange} value={nameQuery}/>
-                    <label for='min-price'>Minimum price</label>
-                    <input type='number' step={0.01} min={0} id='min-price' onChange={handleMinPriceQueryChange} value= {minPriceQuery}/>
-                    <label for='max-price'>Maximum price</label>
-                    <input type='number' step={0.01} min={0} id='max-price' onChange={handleMaxPriceQueryChange} value= {maxPriceQuery}/>
-                    <label for='min-rating'>Minimum rating</label>
-                    <Rating value={ratingQuery} precision={0.1} readOnly/>
-                    <div className='d-flex flex-row'>
-                        <input className= 'w-75 me-2' type='range' min={0.0} max={5.0} step={0.1} id='min-rating' value=  {ratingQuery}     onChange=    {handleRatingQueryChange}/>
-                        <label>{parseFloat(ratingQuery).toFixed(1)}</label>
-                    </div>
-                </div>
-            </Card>
+                    </Card>
+                </Col>
+            
+                <Col>
+                    <Card>
+                        <Card.Header>Sort Results</Card.Header>
+                        <div className='d-flex flex-column p-3'>
+                            <label for='product-name'>Find by name:</label>
+                            <input type='text' id='product-name' onChange={handleNameQueryChange} value={nameQuery}/>
+                            <label for='min-price'>Minimum price</label>
+                            <input type='number' step={0.01} min={0} id='min-price' onChange={handleMinPriceQueryChange}    value=     {minPriceQuery}/>
+                            <label for='max-price'>Maximum price</label>
+                            <input type='number' step={0.01} min={0} id='max-price' onChange={handleMaxPriceQueryChange}    value=     {maxPriceQuery}/>
+                            <label for='min-rating'>Minimum rating</label>
+                            <Rating value={ratingQuery} precision={0.1} onChange={handleRatingQueryChange}/>
+                            <div className='d-flex flex-row'>
+                                <input className= 'w-75 me-2' type='range' min={0.0} max={5.0} step={0.1} id='min-rating' value={ratingQuery} onChange={handleRatingQueryChange}/>
+                                <label>{parseFloat(ratingQuery).toFixed(1)}</label>
+                            </div>
+                        </div>
+                    </Card>
+                </Col>
+            </Row>
         </Container>
     )
 }

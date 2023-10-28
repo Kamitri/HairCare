@@ -105,58 +105,58 @@ function BlogHome() {
     } 
 
     return (
-    <Container className='blog-home'>
+    <div>
         <header className="bg-light border-bottom mb-4">
-            <div className="container">
-                <div className="text-center pt-2">
-                    <h1 className="fw-bolder">The ultimate guide to unlock your perfect hair.</h1>
-                    <p className="lead mb-0">If you have ever wondered how to take care of your hair, we have got you covered with our experts' writings on various common hair problems, home remedies and more. Elevate your hairstyle, today!</p>
-                </div>
+            <div className="text-center pt-2 mx-5">
+                <h1 className="fw-bolder">The ultimate guide to unlock your perfect hair.</h1>
+                <p className="lead mb-0">If you have ever wondered how to take care of your hair, we have got you covered with our experts' writings on various common hair problems, home remedies and more. Elevate your hairstyle, today!</p>
             </div>
         </header>
-        <div className='d-flex'>
-            <main className='w-75 pe-5'>
-                <Row>
-                <Col lg={12}>
-                    {postData.length > 5 * (currentPage - 1) && <FeaturedPostCard post={postData[5 * (currentPage - 1)]} />}
+        <Container className='blog-home'>
+            <Row>
+                <Col lg={9}>
+                    <main>
+                        <Row>
+                            <Col>
+                                {postData.length > 5 * (currentPage - 1) && <FeaturedPostCard post={postData[5 * (currentPage - 1)]} />}
+                            </Col>
+                        </Row>
+                        <Row>
+                        <Col>
+                            {postData.length > 5 * (currentPage - 1) + 1 && <PostCard post={postData[5 * (currentPage- 1)  + 1]} />}
+                        </Col>
+                        <Col>
+                            {postData.length > 5 * (currentPage - 1) + 2 && <PostCard post={postData[5 * (currentPage- 1)  + 2]} />}
+                        </Col>
+                        </Row>
+                        <Row>
+                            <Col>
+                                {postData.length > 5 * (currentPage - 1) + 3 && <PostCard post={postData[5 * (currentPage- 1) + 3]} />}
+                            </Col>
+                            <Col>
+                                {postData.length > 5 * (currentPage - 1) + 4 && <PostCard post={postData[5 * (currentPage- 1) +     4]} />}
+                            </Col>
+                        </Row>
+                        {postData.length === 0 && <h1>We found nothing matching your criteries. Perhaps you should consult doctor  instead  :{"  ("} </h1>}
+                    </main>
+                {maxPage > 1 && <AdvancedPagination currentPage={currentPage} setCurrentPage={setCurrentPage} maxPage={maxPage}/>} 
                 </Col>
-                </Row>
-                <Row>
-                <Col>
-                    {postData.length > 5 * (currentPage - 1) + 1 && <PostCard post={postData[5 * (currentPage- 1)  + 1]} />}
+                <Col lg={3}>
+                    <aside className='row row-lg-2'>
+                        <Col>
+                            <Card className='mb-4'>
+                                <Card.Header>Anything on your mind?</Card.Header>
+                                <Card.Body>
+                                    <input style={{width: '100%'}} type="text" placeholder="Enter search term..."   onChange=           {handlePostTitleSearchChange}/>
+                                </Card.Body>
+                            </Card>
+                            <CardFrequentlySearchTopics postCategorySearch={postCategorySearch} setPostCategorySearch=          {setPostCategorySearch} />
+                        </Col>
+                    </aside>
                 </Col>
-                <Col>
-                    {postData.length > 5 * (currentPage - 1) + 2 && <PostCard post={postData[5 * (currentPage- 1)  + 2]} />}
-                </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        {postData.length > 5 * (currentPage - 1) + 3 && <PostCard post={postData[5 * (currentPage- 1) + 3]} />}
-                    </Col>
-                    <Col>
-                        {postData.length > 5 * (currentPage - 1) + 4 && <PostCard post={postData[5 * (currentPage- 1) + 4]} />}
-                    </Col>
-                </Row>
-                {postData.length === 0 && <h1>We found nothing matching your criteries. Perhaps you should consult doctor instead :{"("} </h1>}
-            </main>
-            <aside className='w-25'>
-                <Row>
-                    <Col>
-                        <Card className='mb-4'>
-                            <Card.Header>Anything on your mind?</Card.Header>
-                            <Card.Body>
-                                <input style={{width: '100%'}} type="text" placeholder="Enter search term..." onChange=     {handlePostTitleSearchChange}/>
-                            </Card.Body>
-                        </Card>
-                        <CardFrequentlySearchTopics postCategorySearch={postCategorySearch} setPostCategorySearch={setPostCategorySearch} />
-                    </Col>
-                </Row>
-            </aside>
-        </div>
-          
-        {maxPage > 1 && <div className='w-50'>
-        <AdvancedPagination currentPage={currentPage} setCurrentPage={setCurrentPage} maxPage={maxPage}/></div>} 
-    </Container>
+            </Row>
+        </Container>
+    </div>
     )
 }
 

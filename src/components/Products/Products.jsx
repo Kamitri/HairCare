@@ -5,6 +5,7 @@ import SortFilterOption from '../SortFilterOption'
 import { useParams } from 'react-router-dom';
 import { useEffect } from 'react';
 import AdvancedPagination from '../AdvancedPagination/AdvancedPagination';
+import { Col, Container, Row } from 'react-bootstrap';
 
 function Products() {
     let productData;
@@ -41,22 +42,27 @@ function Products() {
     }, [productList, currentPage])
     
     return (
-        <div className='products d-flex pt-5'> 
-            <aside style={{minWidth: '180px'}}>
-                <SortFilterOption productData={productData} setProductList={setProductList}/>
-            </aside>
-            {displayingProductList.length > 0 ?
-                <main>
-                    <Gallery productList={displayingProductList} cols={4} />
-                    <AdvancedPagination currentPage={currentPage} setCurrentPage={setCurrentPage} maxPage={maxPage}/>
-                </main>:
-                <main className='pe-5'>
-                    <h1>No Results Found.</h1>
-                    <h2>Try expanding your query or subscribe to our newsletter to receive a notification when this item is available.</h2>
-                </main>
-            }
-            
-        </div>
+        <Container style={{marginLeft: 0, marginRight: 0}}>
+            <Row>
+                <Col lg={2} className='mb-5'>
+                    <aside>
+                        <SortFilterOption productData={productData} setProductList={setProductList}/>
+                    </aside>
+                </Col>
+                <Col lg={10}>
+                    {displayingProductList.length > 0 ?
+                        <main>
+                            <Gallery productList={displayingProductList} cols={4} />
+                            <AdvancedPagination currentPage={currentPage} setCurrentPage={setCurrentPage} maxPage={maxPage}/>
+                        </main>:
+                        <main className='pe-5'>
+                            <h1>No Results Found.</h1>
+                            <h2>Try expanding your query or subscribe to our newsletter to receive a notification when this     item    is available.</h2>
+                        </main>
+                    }
+                </Col>
+            </Row>
+        </Container>
     )
 }
 
