@@ -13,7 +13,7 @@ function ContactUs() {
                 </Col>
             </Row>
             <Row>
-                <Col className='mb-3' md={6} lg={7}>
+                <Col className='mb-3' md={6} lg={7} data-aos='fade-right'>
                     <Form className='form-contact-us'>
                         <Row>
                             <Col>
@@ -41,7 +41,7 @@ function ContactUs() {
                         <div className="text-center pt-3"><button className='btn-stylized rounded py-1 px-3' type="submit">Send Message</button></div>
                     </Form>
                 </Col>
-                <Col className='mb-3' md={6} lg={5}>
+                <Col className='mb-3' md={6} lg={5} data-aos='fade-left' data-aos-delay='100'>
                     <Card className='contact-us-card p-3'>
                         <div className="address contact-us-info">
                             <Row>
@@ -76,7 +76,7 @@ function ContactUs() {
                 </Col>
             </Row>
             <Row>
-                <Col>
+                <Col data-aos='zoom-in' data-aos-delay='100'>
                     <iframe
 	                width='100%'
 	                height='400px'
