@@ -36,11 +36,11 @@ function Brand() {
             </div>
         </header>
         <div className='products d-flex'> 
-            <aside style={{minWidth: '20vh', marginLeft: '1vh'}}>
+            <aside>
                 <SortFilterOption productData={productData} setProductList={setProductList}/>
             </aside>
             <main>
-                <Gallery productList={productList} />
+                <Gallery productList={productList} cols={4}/>
             </main>
         </div>
     </main>

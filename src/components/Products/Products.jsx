@@ -42,7 +42,7 @@ function Products() {
     }, [productList, currentPage])
     
     return (
-        <Container style={{marginLeft: 0, marginRight: 0}}>
+        <Container className='mt-3' style={{marginLeft: 0, marginRight: 0}}>
             <Row>
                 <Col lg={2} className='mb-5'>
                     <aside>
