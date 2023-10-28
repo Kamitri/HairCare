@@ -11,25 +11,25 @@ import anime from 'animejs'
 
 function Hero() {
     return (
-    <div className='hero d-flex align-items-center'>
+    <Container fluid className='w-100 hero d-flex align-items-center'>
         <Row className='px-5'>
-            <Col className='d-flex flex-column justify-content-center pt-4 order-2' data-aos='fade-up'  data-aos-delay='200'>
+            <Col lg={6} className='d-flex flex-column justify-content-center order-2' data-aos='fade-up'  data-aos-delay='200'>
               <h1>Where your hair's best days begin.</h1>
               <h2>At HairCare, we offer our expertise to transform your hair journey. Our mission is to empower you with the knowledge, products, and guidance needed to achieve hair that truly reflects your unique beauty.</h2>
               <div className='d-flex justify-content-center justify-content-lg-start'>
-                <btn className='btn-stylized-alt scrollto mx-3 px-3 py-2' as={Link} to='/products'><FaShop className='me-2'/>Browse Store</btn>
+                <btn className='btn-stylized-alt scrollto px-3 py-2' as={Link} to='/products'><FaShop className='me-2'/>Browse Store</btn>
               </div>
             </Col>
-            <div className='col-lg-6 order-1 order-lg-2 hero-img' data-aos='zoom-in' data-aos-delay='200'>
-                <Carousel indicators={false} controls={false} fade={true} className='animated'>
+            <Col lg={6} className='order-1 order-lg-2 hero-img' data-aos='zoom-in' data-aos-delay='200'>
+                <Carousel indicators={false} controls={false} fade={true} className='animated mb-3'>
                     <Carousel.Item><img src='/img/banner.avif' className='img-fluid img-banner' alt='' /></Carousel.Item>
                     <Carousel.Item><img src='/img/banner2.webp' className='img-fluid img-banner' alt='' /></Carousel.Item>
                     <Carousel.Item><img src='/img/banner3.webp' className='img-fluid img-banner' alt='' /></Carousel.Item>
                     <Carousel.Item><img src='/img/banner4.avif' className='img-fluid img-banner' alt='' /></Carousel.Item>
                 </Carousel>
-            </div>
+            </Col>
         </Row>
-    </div>
+    </Container>
     )
 }
 
@@ -110,7 +110,7 @@ function FeaturedProducts () {
 
 function AboutUs() {
     return (
-    <section id='about' className='about py-5' data-aos='fade-up'>
+    <section id='about' className='about py-3' data-aos='fade-up'>
         <div className='container'>
             <h2 className='section-title fw-bold'>What is HairCare?</h2>
             <p className='lead text-center'>At HairCare, we are more than just a company; we are a team of passionate individuals dedicated to your hair's well-being. We believe that every individual deserves to embrace their unique beauty through healthy, radiant hair. With a wealth of expertise and a commitment to excellence, we aim to be your trusted partner on your hair care journey, ensuring you have the tools, knowledge, and support you need to achieve the hair you love.</p>

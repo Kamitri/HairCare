@@ -54,7 +54,7 @@ function Gallery({productList, cols}) {
     return (
         <Container className='gallery'>
             {Array.from({ length: rows }).map((_, i) =>
-                <Row md={cols-1} lg={cols}>
+                <Row lg={cols}>
                     {productList.slice(cols * i, (cols * i) + cols).map((product, idx) => (
                         <Col key={idx}>
                             <GalleryItem product={product}></GalleryItem>

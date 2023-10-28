@@ -5,7 +5,6 @@ import { Button, Dropdown, Navbar, NavbarBrand, ButtonGroup, NavDropdown, Nav } 
 
 function AppNavBar() {
     const location = useLocation();
-    const navigate = useNavigate();
     return (
        <Navbar expand='lg' className='navbar-dark'>
             <NavbarBrand href="#">
@@ -13,7 +12,7 @@ function AppNavBar() {
             </NavbarBrand>
             <Navbar.Toggle aria-controls="app-navbar" />
             <Navbar.Collapse id="app-navbar">
-                <Nav className="me-auto" style={{gap: "5vh"}}>
+                <Nav className='ms-3' style={{gap: "5vh"}}>
                     <Link className={'nav-item nav-link ' + (location.pathname === '/' ? "link-active" : '')} to="/">HOME</Link>
                     <Link className={"nav-item nav-link " + (location.pathname === '/blog' ? "link-active" : '')} to="/blog">BLOG</Link>
                     <NavDropdown className={location.pathname.includes('/products') ? "link-active" : ''} title='STORE'>

@@ -82,7 +82,7 @@ function ContactUs() {
 	                height='400px'
 	                frameborder='0' style={{border: '0'}}
 	                referrerpolicy='no-referrer-when-downgrade'
-	                src='//www.google.com/maps/embed/v1/place?key=AIzaSyCVgvXLzZY03gYNAE-n_JWcmVK2-SxwRxo&q=FPT+APTECH+HCM+2+-+Hệ+Thống +Đào         +Tạo+Lập+Trình+Viên+Quốc+Tế+(Since+1999)'
+	                src='//www.google.com/maps/embed/v1/place?key=AIzaSyCVgvXLzZY03gYNAE-n_JWcmVK2-SxwRxo&q=FPT+APTECH+HCM+2+-+Hệ+Thống+Đào+Tạo+Lập+Trình+Viên+Quốc+Tế+(Since+1999)'
 	                allowfullscreen>
                     </iframe>
                 </Col>
