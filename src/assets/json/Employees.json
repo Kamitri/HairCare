@@ -1,0 +1,54 @@
+[
+    {
+        "id": 1,
+        "name": "Nguyễn Minh Trí",
+        "avatar": "https://scontent.fsgn2-6.fna.fbcdn.net/v/t1.6435-9/72285496_2532425966978611_5716406324841938944_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=be3454&_nc_ohc=lT7cDCUxh4wAX9u-7Mz&_nc_ht=scontent.fsgn2-6.fna&oh=00_AfBs2vx7Sz3g5aLOXY_1fmMUiZYdTaP_oZPqMyH_Y9sw4g&oe=65618554",
+        "role": "CEO",
+        "desc": "Our CEO leads HairCare, setting the vision and ensuring our commitment to quality and innovation for your hair care needs.",
+        "social": {
+            "facebook": "https://www.facebook.com/people/Minh-Tr%C3%AD-Nguy%E1%BB%85n/pfbid0PEUA99M2XZygJmWFDYMpErJ46F3raoY2MzBbfPXWG5c734WuK3Kq6SkVfTAbLMkAl/",
+            "github": "https://github.com/Kamitri",
+            "x": "#",
+            "instagram": "#"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Nguyễn Minh Trí",
+        "avatar": "https://scontent.fsgn2-6.fna.fbcdn.net/v/t1.6435-9/72285496_2532425966978611_5716406324841938944_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=be3454&_nc_ohc=lT7cDCUxh4wAX9u-7Mz&_nc_ht=scontent.fsgn2-6.fna&oh=00_AfBs2vx7Sz3g5aLOXY_1fmMUiZYdTaP_oZPqMyH_Y9sw4g&oe=65618554",
+        "role": "Head of HairCare Experts",
+        "desc": "Leading our expert team, he offers personalized guidance, utilizing vast knowledge to address your hair concerns and recommend effective solutions.",
+        "social": {
+            "facebook": "https://www.facebook.com/people/Minh-Tr%C3%AD-Nguy%E1%BB%85n/pfbid0PEUA99M2XZygJmWFDYMpErJ46F3raoY2MzBbfPXWG5c734WuK3Kq6SkVfTAbLMkAl/",
+            "github": "https://github.com/Kamitri",
+            "x": "#",
+            "instagram": "#"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Nguyễn Minh Trí",
+        "avatar": "https://scontent.fsgn2-6.fna.fbcdn.net/v/t1.6435-9/72285496_2532425966978611_5716406324841938944_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=be3454&_nc_ohc=lT7cDCUxh4wAX9u-7Mz&_nc_ht=scontent.fsgn2-6.fna&oh=00_AfBs2vx7Sz3g5aLOXY_1fmMUiZYdTaP_oZPqMyH_Y9sw4g&oe=65618554",
+        "role": "Head of Product Development",
+        "desc": "Responsible for our user-friendly website, he oversees the technical aspects to provide a seamless online experience.",
+        "social": {
+            "facebook": "https://www.facebook.com/people/Minh-Tr%C3%AD-Nguy%E1%BB%85n/pfbid0PEUA99M2XZygJmWFDYMpErJ46F3raoY2MzBbfPXWG5c734WuK3Kq6SkVfTAbLMkAl/",
+            "github": "https://github.com/Kamitri",
+            "x": "#",
+            "instagram": "#"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Nguyễn Minh Trí",
+        "avatar": "https://scontent.fsgn2-6.fna.fbcdn.net/v/t1.6435-9/72285496_2532425966978611_5716406324841938944_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=be3454&_nc_ohc=lT7cDCUxh4wAX9u-7Mz&_nc_ht=scontent.fsgn2-6.fna&oh=00_AfBs2vx7Sz3g5aLOXY_1fmMUiZYdTaP_oZPqMyH_Y9sw4g&oe=65618554",
+        "role": "Head of IT and Web Design",
+        "desc": "At the forefront of creating high-quality hair care solutions, he formulates and tests products to meet the highest standards for your hair's well-being.",
+        "social": {
+            "facebook": "https://www.facebook.com/people/Minh-Tr%C3%AD-Nguy%E1%BB%85n/pfbid0PEUA99M2XZygJmWFDYMpErJ46F3raoY2MzBbfPXWG5c734WuK3Kq6SkVfTAbLMkAl/",
+            "github": "https://github.com/Kamitri",
+            "x": "#",
+            "instagram": "#"
+        }
+    }
+]

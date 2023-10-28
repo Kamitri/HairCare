@@ -1,0 +1,40 @@
+@import '../../App.scss';
+
+.product-card {
+    width: 16vw; 
+    height: 46vh;
+    cursor: pointer;
+    display: flex;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background-color 0.3s ease-in-out, scale 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    background-color: whitesmoke;
+    scale: 1.05 1.05;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.product-card-img {
+    width: auto;
+    height: 20vh;
+    object-fit: contain;
+    align-self: center;
+}
+
+.product-name {
+    min-height: 10vh;
+    max-height: 10vh;
+    overflow: hidden;
+}
+
+.product-rating {
+    height: 3vh;
+}
+
+.pricetag {
+    min-height: 4vh;
+    max-height: 4vh;
+    overflow: hidden;
+}

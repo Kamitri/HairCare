@@ -1,0 +1,28 @@
+<mxfile host="app.diagrams.net" modified="2023-10-26T11:15:08.262Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0" etag="P1lP3fCDXJpLV1P9vuFH" version="22.0.8" type="device">
+  <diagram name="Page-1" id="sAOJ5SrDfzlhlrvFXXsP">
+    <mxGraphModel dx="808" dy="408" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nBLHbdXHp7UiOyoCYOLu-15" value="Header" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="210" y="170" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nBLHbdXHp7UiOyoCYOLu-23" value="Short About Us" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="210" y="270" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nBLHbdXHp7UiOyoCYOLu-26" value="Featured Products" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="210" y="370" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nBLHbdXHp7UiOyoCYOLu-28" value="&lt;div&gt;Footer&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="210" y="420" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="r9LU1n8cO8k18PTNaj-M-1" value="Our Partners" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="210" y="320" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="r9LU1n8cO8k18PTNaj-M-3" value="Hero" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="210" y="220" width="100" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

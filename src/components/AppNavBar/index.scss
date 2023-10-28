@@ -1,0 +1,26 @@
+@import '../../App.scss';
+
+.navbar {
+    background-color: $primary;
+}
+
+.navbar-brand {
+    margin-left: 1%;
+}
+
+.navbar-nav {
+    align-content: space-between;
+}
+
+.dropdown-toggle.dropdown-toggle-split.btn.btn-primary {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: white !important;
+}
+
+.app-dropdown {
+    background-color: transparent !important;
+    border: none !important;
+    color: white !important;
+}

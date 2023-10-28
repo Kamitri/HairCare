@@ -1,0 +1,54 @@
+[
+    {
+        "id": "hair-cream",
+        "title": "Hair Cream"
+    },
+    {
+        "id": "shampoo",
+        "title": "Shampoo"
+    },
+    {
+        "id": "conditioner",
+        "title": "Conditioners"
+    },
+    {
+        "id": "mask",
+        "title": "Masks"
+    },
+    {
+        "id": "serum",
+        "title": "Serums"
+    },
+    {
+        "id": "hairspray",
+        "title": "Hairspray"
+    },
+    {
+        "id": "oil",
+        "title": "Hair oil"
+    },
+    {
+        "id": "dryer",
+        "title": "Dryers"
+    },
+    {
+        "id": "straightener",
+        "title": "Straighteners"
+    },
+    {
+        "id": "spray-bottle",
+        "title": "Spray Bottles"
+    },
+    {
+        "id": "steamer",
+        "title": "Steamers"
+    },
+    {
+        "id": "massager",
+        "title": "Massagers"
+    },
+    {
+        "id": "spa-cap",
+        "title": "Spa Caps"
+    }
+]

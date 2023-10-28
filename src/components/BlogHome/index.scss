@@ -1,0 +1,19 @@
+@import '../../index.scss';
+
+
+.card-blog-post-introduction {
+    max-width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-blog-post {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card-blog-post:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
