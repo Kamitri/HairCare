@@ -12,15 +12,18 @@
     align-content: space-between;
 }
 
-.dropdown-toggle.dropdown-toggle-split.btn.btn-primary {
-    background-color: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    color: white !important;
+.nav-item.nav-link {
+    color: white;
 }
 
-.app-dropdown {
-    background-color: transparent !important;
-    border: none !important;
-    color: white !important;
+.dropdown-toggle.nav-link {
+    
+    color: white;
+}
+
+.link-active {
+    .dropdown-toggle.nav-link {
+        color: $tertiary !important;
+    }
+    color: $tertiary !important;
 }
