@@ -141,7 +141,7 @@ function BlogHome() {
                     </main>
                 {maxPage > 1 && <AdvancedPagination currentPage={currentPage} setCurrentPage={setCurrentPage} maxPage={maxPage}/>} 
                 </Col>
-                <Col lg={3}>
+            <Col xs={{order: 'first'}} lg={{order: 'last', span: 3}}>
                     <aside className='row row-lg-2'>
                         <Col>
                             <Card className='mb-4'>
