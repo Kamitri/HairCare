@@ -6,14 +6,14 @@ import { Card, Col, Container, Form, Row } from 'react-bootstrap'
 function ContactUs() {
   return (
     <main id="contact" className="contact pt-3">
-      <div className="container" data-aos="fade-up">
-        <div className="section-title">
-            <p>Something on your mind? Don't hesitate to contact us, we are always available to help. </p>
-        </div>
-
         <Container>
             <Row>
-                <Col>
+                <Col className='section-title'>
+                    <p>Something on your mind? Don't hesitate to contact us, we are always available to help. </p>
+                </Col>
+            </Row>
+            <Row>
+                <Col className='mb-3' md={6} lg={7}>
                     <Form className='form-contact-us'>
                         <Row>
                             <Col>
@@ -38,10 +38,10 @@ function ContactUs() {
                           <div className="error-message"></div>
                           <div className="sent-message">Your message has been sent. Thank you!</div>
                         </div>}
-                        <div className="text-center pt-3"><button type="submit">Send Message</button></div>
+                        <div className="text-center pt-3"><button className='btn-stylized rounded py-1 px-3' type="submit">Send Message</button></div>
                     </Form>
                 </Col>
-                <Col className='col-5'>
+                <Col className='mb-3' md={6} lg={5}>
                     <Card className='contact-us-card p-3'>
                         <div className="address contact-us-info">
                             <Row>
@@ -75,20 +75,20 @@ function ContactUs() {
                     </Card>
                 </Col>
             </Row>
+            <Row>
+                <Col>
+                    <iframe
+	                width='100%'
+	                height='400px'
+	                frameborder='0' style={{border: '0'}}
+	                referrerpolicy='no-referrer-when-downgrade'
+	                src='//www.google.com/maps/embed/v1/place?key=AIzaSyCVgvXLzZY03gYNAE-n_JWcmVK2-SxwRxo&q=FPT+APTECH+HCM+2+-+Hệ+Thống +Đào         +Tạo+Lập+Trình+Viên+Quốc+Tế+(Since+1999)'
+	                allowfullscreen>
+                    </iframe>
+                </Col>
+            </Row>
         </Container>
 
-        <section className="py-5">
-              <iframe
-	            width='100%'
-	            height='400px'
-	            frameborder='0' style={{border: '0'}}
-	            referrerpolicy='no-referrer-when-downgrade'
-	            src='//www.google.com/maps/embed/v1/place?key=AIzaSyCVgvXLzZY03gYNAE-n_JWcmVK2-SxwRxo&q=FPT+APTECH+HCM+2+-+Hệ+Thống+Đào         +Tạo+Lập+Trình+Viên+Quốc+Tế+(Since+1999)'
-	            allowfullscreen>
-                </iframe>
-        </section>
-
-        </div>
     </main>
   )
 }
