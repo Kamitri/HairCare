@@ -2,7 +2,7 @@
 
 footer {
     width: 100%;
-    background: $primary;
+    background: $bg;
     min-height: 100px;
     padding: 20px;
     display: flex;
@@ -21,6 +21,6 @@ footer {
 
 .social-media-icon:hover {
     margin-top: -7px;
-    color: $bright;
+    color: $secondary;
     width: 45px;
 }

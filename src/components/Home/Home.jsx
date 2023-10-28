@@ -17,7 +17,7 @@ function Hero() {
               <h1>Where your hair's best days begin.</h1>
               <h2>At HairCare, we offer our expertise to transform your hair journey. Our mission is to empower you with the knowledge, products, and guidance needed to achieve hair that truly reflects your unique beauty.</h2>
               <div className='d-flex justify-content-center justify-content-lg-start'>
-                <Button className='btn-get-started scrollto mx-3' as={Link} to='/products'><FaShop className='me-2'/>Browse Store</Button>
+                <btn className='btn-stylized-alt scrollto mx-3 px-3 py-2' as={Link} to='/products'><FaShop className='me-2'/>Browse Store</btn>
               </div>
             </Col>
             <div className='col-lg-6 order-1 order-lg-2 hero-img' data-aos='zoom-in' data-aos-delay='200'>
@@ -99,7 +99,7 @@ function FeaturedProducts () {
                 <h2 className='fw-bold'>FEATURED PRODUCTS</h2>
           </div>
           <div className='d-flex align-items-center justify-content-center'>
-            <Button className='me-5' onClick={handlePreviousPage}>{"<"}</Button>
+            <Button variant='primary' className='me-5' onClick={handlePreviousPage}>{"<"}</Button>
             <Gallery productList={displayingFeaturedProducts} cols={cols}/>
             <Button className='ms-5' onClick={handleNextPage}>{">"}</Button>
           </div>
@@ -108,17 +108,14 @@ function FeaturedProducts () {
   )
 }
 
-
 function AboutUs() {
     return (
     <section id='about' className='about py-5' data-aos='fade-up'>
         <div className='container'>
-            <div className='section-title'>
-                <h2 className='fw-bold'>What is HairCare?</h2>
-            </div>
+            <h2 className='section-title fw-bold'>What is HairCare?</h2>
             <p className='lead text-center'>At HairCare, we are more than just a company; we are a team of passionate individuals dedicated to your hair's well-being. We believe that every individual deserves to embrace their unique beauty through healthy, radiant hair. With a wealth of expertise and a commitment to excellence, we aim to be your trusted partner on your hair care journey, ensuring you have the tools, knowledge, and support you need to achieve the hair you love.</p>
             <div className='d-flex justify-content-center'>
-                <button className='btn-learn-more justify-self-center'>Learn More >></button>
+                <button className='btn-stylized justify-self-center px-4 py-1 btn-gogo'>Learn More</button>
             </div>
       </div>
     </section>
@@ -138,29 +135,26 @@ function FeaturedBrands () {
     return (
     <section id='featured-brands' className='featured-brands section-bg'>
         <div className='container' data-aos='fade-up'>
-            <div className='section-title'>
-                  <h2 className='fw-bold'>Our partners</h2>
-            </div>
+            <h2 className='section-title fw-bold'>Our partners</h2>
             <Stack className='justify-content-center' direction='horizontal'>
                 {allBrands.map((brand, i) => // TODO: Make image logo clickable in a larger, consistent square
                     getBrandImg(brand, i)
                 )}
             </Stack>
             <div className='d-flex justify-content-center'>
-                <button className='btn-learn-more justify-self-center'>See All {">>"}</button>
+                <button className='btn-stylized fs-6 py-1 px-4 justify-self-center'>See All {">>"}</button>
             </div>
         </div>
     </section>
     )
 }
+
 function Services() {
     return (
         <section id='services' className='services section-bg'>
         <div className='container' data-aos='fade-up'>
   
-            <div className='section-title'>
-              <h2 className='fw-bold'>Services</h2>
-            </div>
+            <h2 className='section-title fw-bold'>Services</h2>
             <p className='lead text-center'>Our mission is to provide top-quality hair care products and share valuable   information on hair problems, home remedies, and expert guidance for anyone facing hair issues. Discover our  excellent services meticulously tailored to ensure a smooth and transformative hair journey.</p>
   
             <Row className='justify-content-center'>

@@ -98,7 +98,7 @@ function Product() {
                         <p className="lead">{product.desc}</p>
                         <div className="d-flex">
                             <input className="text-center me-3" id="input-quantity" type="num" value="1" style={{maxWidth: "3rem"}} />
-                            <button className="btn btn-outline-dark flex-shrink-0" type="button">
+                            <button className="btn-stylized px-4 py-1" type="button">
                                 Add to cart
                             </button>
                         </div>
