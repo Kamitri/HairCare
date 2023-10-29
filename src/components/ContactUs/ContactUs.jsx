@@ -78,6 +78,7 @@ function ContactUs() {
             <Row>
                 <Col data-aos='zoom-in' data-aos-delay='100'>
                     <iframe
+                    title='HairCare Inc. Headquarters Location'
 	                width='100%'
 	                height='400px'
 	                frameborder='0' style={{border: '0'}}

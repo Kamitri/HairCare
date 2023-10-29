@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import './index.scss'
 import allBrands from '../../assets/json/Brands.json'
 import allProducts from '../../assets/json/Products.json'

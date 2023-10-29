@@ -1,9 +1,9 @@
 import React from 'react'
 import { Carousel, Col, Container, Row } from 'react-bootstrap'
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import productList from '../../assets/json/Products.json'
 import { useState } from 'react';
-import ImageViewer from 'react-simple-image-viewer'
+import ImageGallery from 'react-image-gallery'
 import { Rating } from '@mui/material';
 import './index.scss'
 
@@ -50,41 +50,15 @@ function Ingredients({product}) {
 }
 
 function Product() {
-    const [imageIndex, setImageIndex] = useState(0);
-    const [isViewerOpen, setIsViewerOpen] = useState(false);
     const { productId } = useParams();
     const product = productList.filter((prod) => prod.id === productId)[0];
-    const openImageViewer =(index) => { 
-        setImageIndex(index);
-        setIsViewerOpen(true);
-    }
-    const closeImageViewer = () => {
-        setIsViewerOpen(false);
-      };
+    const images = product.images.map((image) => ({'original': image, 'originalHeight': '400px'}))
     return (
         <main> 
             <Container className="px-4 my-5">
                 <Row className="gx-4 align-items-center">
                     <Col md={6}>    
-                        {!isViewerOpen && <Carousel className='product-carousel' indicators={false} activeIndex={imageIndex} onSelect={(i) => setImageIndex(i)} data-bs-theme="dark">{
-                            product.images.map((image, i) => (
-                                <Carousel.Item>
-                                    <div className='d-flex justify-content-center'>
-                                        <img style={{height: '70vh', width: 'auto'}} className='img-fluid rounded' src={image}  alt={product.name + ' image #' + (i + 1)} 
-                                        onClick={() => openImageViewer(i) } />
-                                    </div>
-                                </Carousel.Item>
-                            ))
-                        }</Carousel>}
-                        {isViewerOpen && (
-                            <ImageViewer
-                              src={product.images}
-                              currentIndex={imageIndex}
-                              disableScroll={false}
-                              closeOnClickOutside={true}
-                              onClose={closeImageViewer}
-                            />
-                        )}
+                        <ImageGallery items={images} slideInterval={4000} autoPlay={true} />
                     </Col>
                     <div className="col-md-6">
                         <h1 className="fw-bold">{product.name}</h1>
