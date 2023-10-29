@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './index.scss'
 import allBrands from '../../assets/json/Brands.json'
 import allProducts from '../../assets/json/Products.json'
-import { Button, Carousel, Col, Container, Row, Stack } from 'react-bootstrap'
+import { Button, Carousel, Col, Container, Image, Row, Stack } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { FaShop, FaBlog, FaPhone } from 'react-icons/fa6'
 import Gallery from '../Gallery'
@@ -17,7 +17,9 @@ function Hero() {
               <h1>Where your hair's best days begin.</h1>
               <h2>At HairCare, we offer our expertise to transform your hair journey. Our mission is to empower you with the knowledge, products, and guidance needed to achieve hair that truly reflects your unique beauty.</h2>
               <div className='d-flex justify-content-center justify-content-lg-start'>
-                <btn className='btn-stylized-alt scrollto px-3 py-2' as={Link} to='/products'><FaShop className='me-2'/>Browse Store</btn>
+                <Link to='/products'>
+                  <btn className='btn-stylized-alt px-3 py-2'><FaShop className='me-2'/>Browse Store</btn>
+                </Link>
               </div>
             </Col>
             <Col lg={6} className='order-1 order-lg-2 hero-img' data-aos='zoom-in' data-aos-delay='200'>
@@ -115,7 +117,9 @@ function AboutUs() {
             <h2 className='section-title fw-bold'>What is HairCare?</h2>
             <p className='lead text-center'>At HairCare, we are more than just a company; we are a team of passionate individuals dedicated to your hair's well-being. We believe that every individual deserves to embrace their unique beauty through healthy, radiant hair. With a wealth of expertise and a commitment to excellence, we aim to be your trusted partner on your hair care journey, ensuring you have the tools, knowledge, and support you need to achieve the hair you love.</p>
             <div className='d-flex justify-content-center'>
-                <button className='btn-stylized justify-self-center px-4 py-1 btn-gogo'>Learn More</button>
+              <Link to='/about-us'>
+                <button className='btn-stylized justify-self-center px-4 py-1 btn-gogo'>Meet Our Team</button>
+              </Link>
             </div>
       </div>
     </section>
@@ -141,9 +145,6 @@ function FeaturedBrands () {
                     getBrandImg(brand, i)
                 )}
             </Stack>
-            <div className='d-flex justify-content-center'>
-                <button className='btn-stylized fs-6 py-1 px-4 justify-self-center'>See All {">>"}</button>
-            </div>
         </div>
     </section>
     )
@@ -189,6 +190,33 @@ function Services() {
     )
 }
 
+function Discover() {
+  return (
+  <section id='discover' className='discover py-3' data-aos='fade-up'>
+      <div className='container'>
+          <h2 className='section-title fw-bold'>Discover the latest trends in hair care</h2>
+          <Container>
+            <Row>
+              <Col lg={5}>
+                <Image fluid src='/img/hair-color-simulation.jpg' />
+              </Col>
+              <Col>
+                <p className='lead text-justify'>Discover the Latest Advancements in Hair Care! Our experts predict that 2023 is poised to revolutionize the way we care for our hair. In this article, we delve into the cutting-edge developments that are reshaping the industry. From CBD-infused products to smart hair care technology, the future of hair care is here.</p>
+                <div className='learn-more'>
+                  <Link to='blog/d-trend-2023'>
+                    <button className='btn-stylized justify-self-center px-4 py-1'>Learn More</button>
+                  </Link>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+          
+          
+    </div>
+  </section>
+  )
+}
+
 function Home() {
     return (
     <main>
@@ -200,6 +228,8 @@ function Home() {
         <Services />
         <hr/ >
         <FeaturedBrands />
+        <hr />
+        <Discover />
     </main>
     )
 }

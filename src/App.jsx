@@ -1,6 +1,6 @@
 import './App.scss';
 import Footer from './components/Footer';
-import { Link, Route, Routes, ScrollRestoration } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import AppNavBar from './components/AppNavBar';
 import Products from './components/Products';
 import Product from './components/Product';
@@ -14,7 +14,7 @@ import ContactUs from './components/ContactUs';
 import AboutUs from './components/AboutUs';
 import AOS from 'aos'
 import 'aos/dist/aos.css';
-import { useEffect, useState, useContext } from 'react';
+import { useEffect, useState } from 'react';
 import ComparisonContext from './components/ComparisonContext';
 
 function App() {
@@ -45,6 +45,7 @@ function App() {
 						<Route path='*' element={<NotFound />}/>
       				</Routes>
 				</ComparisonContext.Provider>
+				
 			</div>
       		<Footer></Footer>
 			

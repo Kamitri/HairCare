@@ -7,8 +7,17 @@
     text-transform: uppercase;
     font-weight: bolder !important;
     color: $primary !important;
-
 }
+
+@media (max-width: 1200px) {
+    .learn-more {
+        justify-content: center;
+    }
+    p {
+        text-align: justify;
+    }
+}
+
 
 .hero {
         width: 100%;
