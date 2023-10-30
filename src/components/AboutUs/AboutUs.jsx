@@ -7,7 +7,24 @@ import './index.scss'
 
 function OurStory() {
   return (
-  <section></section>
+  <section>
+    <div className='container mt-3 text-right'>
+        <h2 className='section-title fw-bold'>Our Story</h2>
+        <Container>
+            <Row>
+                <Col>
+                    <img src='https://media.istockphoto.com/id/1347116065/photo/daily-routine-at-the-office.jpg?s=612x612&w=0&k=20&c=hQUg-hz3xOZurD3Ys5eWmI1cGW04Mvt8y1lX48urj9I=' className='float-left' alt='HairCare company demonstration' />
+                </Col>
+                <Col>
+                    <p>In January 2023, Nguyễn Minh Trí, a passionate entrepreneur, embarked on a digital adventure, giving birth to HairCare – an exclusively e-commerce platform for hair care products. This visionary journey was fueled by Nguyễn Minh Trí's desire to revolutionize the way we approach hair care.</p>
+                    <p>Nguyễn Minh Trí's mission was clear: to provide personalized hair care solutions in a world where generic products ruled the market. He believed that every individual's hair deserved a customized approach, and this core belief became the driving force behind HairCare.</p>
+                    <p>From its inception, HairCare served as an online repository of knowledge, offering valuable insights into common hair problems, home remedies, and the latest products. It seamlessly blended science and nature, tradition and innovation, all within a few clicks.</p>
+                    <p>As we step into 2023, HairCare's narrative continues to evolve. The mission remains unwavering: to empower individuals to embrace the unique beauty of their hair. Join us on this digital odyssey, where your hair's story becomes our story. Welcome to the HairCare family, where Nguyễn Minh Trí's vision becomes a reality.</p>
+                </Col>
+            </Row>
+        </Container>
+    </div>
+  </section>
   )
 }
 
@@ -42,7 +59,7 @@ function Team() {
                 <div className='section-title'>
                     <h2 className='fw-bold'>Meet Our Team</h2>
                 </div>
-                <p className='lead text-center'>Our team at HairCare is the heart of our commitment to exceptional hair care.   With experts in hair care, product development, and customer support, we collaborate to offer innovative  solutions tailored to your hair's unique needs. Get to know the faces behind the brand; we're here to guide  you on your hair care journey.</p>
+                <p className='text-center'>Our team at HairCare is the heart of our commitment to exceptional hair care.   With experts in hair care, product development, and customer support, we collaborate to offer innovative  solutions tailored to your hair's unique needs. Get to know the faces behind the brand; we're here to guide  you on your hair care journey.</p>
             </section>
             <Container>
                 <Row>
@@ -70,6 +87,8 @@ function Team() {
 function AboutUs() {
     return (
         <main>
+            <OurStory />
+            <hr />
             <Team />
         </main>
     )

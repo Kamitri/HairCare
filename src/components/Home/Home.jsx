@@ -101,9 +101,9 @@ function FeaturedProducts () {
                 <h2 className='fw-bold'>FEATURED PRODUCTS</h2>
           </div>
           <div className='d-flex align-items-center justify-content-center'>
-            <Button variant='primary' className='me-5' onClick={handlePreviousPage}>{"<"}</Button>
+            <Button variant='primary' className='me-5' onClick={handlePreviousPage}>{'<'}</Button>
             <Gallery productList={displayingFeaturedProducts} cols={cols}/>
-            <Button className='ms-5' onClick={handleNextPage}>{">"}</Button>
+            <Button className='ms-5' onClick={handleNextPage}>{'>'}</Button>
           </div>
       </div>
   </section>
@@ -118,7 +118,7 @@ function AboutUs() {
             <p className='lead text-center'>At HairCare, we are more than just a company; we are a team of passionate individuals dedicated to your hair's well-being. We believe that every individual deserves to embrace their unique beauty through healthy, radiant hair. With a wealth of expertise and a commitment to excellence, we aim to be your trusted partner on your hair care journey, ensuring you have the tools, knowledge, and support you need to achieve the hair you love.</p>
             <div className='d-flex justify-content-center'>
               <Link to='/about-us'>
-                <button className='btn-stylized justify-self-center px-4 py-1 btn-gogo'>Meet Our Team</button>
+                <button className='btn-stylized justify-self-center px-4 py-1'>See Our Story {'>>'}</button>
               </Link>
             </div>
       </div>
@@ -206,7 +206,7 @@ function Discover() {
                 <p className='lead text-justify'>Discover the Latest Advancements in Hair Care! Our experts predict that 2023 is poised to revolutionize the way we care for our hair. In this article, we delve into the cutting-edge developments that are reshaping the industry. From CBD-infused products to smart hair care technology, the future of hair care is here.</p>
                 <div className='d-flex learn-more'>
                   <Link to='blog/d-trend-2023'>
-                    <button className='btn-stylized justify-self-center px-4 py-1'>Learn More</button>
+                    <button className='btn-stylized justify-self-center px-4 py-1'>Learn More {'>>'}</button>
                   </Link>
                 </div>
               </Col>
