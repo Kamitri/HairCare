@@ -131,21 +131,23 @@ function FeaturedBrands () {
         // Returns nothing after index = 6 (7 featured brands in total)
         if (index > 6) return null;
         return (
-        <Link to={`/brand/${brand.id}`} data-aos='fade-right' data-aos-delay={index * 400 - 400}>
-            <img style={{width: '20vh'}} className='img-fluid mx-3' src={brand.logo} alt={brand.name + ' logo'}/>
-        </Link>
+        <Col xs={4} md={2} lg={2} data-aos='fade-right' data-aos-delay={index * 400 - 400}>
+          <Link className='d-flex h-100'  to={`/brand/${brand.id}`}>
+            <img style={{objectFit: 'contain'}} className='img-fluid my-3' src={brand.logo} alt={brand.name + ' logo'}/>
+          </Link>
+        </Col>
         )
     }
     return (
     <section id='featured-brands' className='featured-brands section-bg'>
-        <div className='container' data-aos='fade-up'>
-            <h2 className='section-title fw-bold'>Our partners</h2>
-            <Stack className='justify-content-center' direction='horizontal'>
-                {allBrands.map((brand, i) => // TODO: Make image logo clickable in a larger, consistent square
-                    getBrandImg(brand, i)
-                )}
-            </Stack>
-        </div>
+      <h2 className='section-title fw-bold'>Our partners</h2>
+      <Container fluid>
+        <Row className='justify-content-center'>
+          {allBrands.map((brand, i) => // TODO: Make image logo clickable in a larger, consistent square
+              getBrandImg(brand, i)
+          )}
+        </Row>
+      </Container>
     </section>
     )
 }
@@ -202,7 +204,7 @@ function Discover() {
               </Col>
               <Col>
                 <p className='lead text-justify'>Discover the Latest Advancements in Hair Care! Our experts predict that 2023 is poised to revolutionize the way we care for our hair. In this article, we delve into the cutting-edge developments that are reshaping the industry. From CBD-infused products to smart hair care technology, the future of hair care is here.</p>
-                <div className='learn-more'>
+                <div className='d-flex learn-more'>
                   <Link to='blog/d-trend-2023'>
                     <button className='btn-stylized justify-self-center px-4 py-1'>Learn More</button>
                   </Link>
