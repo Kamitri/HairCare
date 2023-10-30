@@ -60,10 +60,10 @@ function CardFrequentlySearchTopics ({postCategorySearch, setPostCategorySearch}
             <Row>
                 <div className='d-flex flex-column'>
                     {postCategorySearch.length === 0 && <p className='fw-light text-center'>Currently showing all posts</p>}
-                    <Button className='my-1' onClick={() => handleCategoryToggle('Home Remedies')} variant='success'>Home Remedies
+                    <Button className='my-1' onClick={() => handleCategoryToggle('Home Remedies')} variant='primary'>Home Remedies
                         <Badge className='ms-2' bg="secondary">{postCategorySearch.includes('Home Remedies') ? '-' : '+'}</Badge>
                     </Button>
-                    <Button className='my-1' onClick={() => handleCategoryToggle('Common Hair Problems')} variant='danger'>Common Hair Problems
+                    <Button className='my-1' onClick={() => handleCategoryToggle('Common Hair Problems')} variant='primary'>Common Hair Problems
                         <Badge className='ms-2' bg="secondary">{postCategorySearch.includes('Common Hair Problems') ? '-' : '+'}</Badge>
                     </Button>
                     <Button className='my-1' onClick={() => handleCategoryToggle('R&D')} variant='primary'>R&D in Hair Care
