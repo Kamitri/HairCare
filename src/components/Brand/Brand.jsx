@@ -7,6 +7,7 @@ import { useEffect } from 'react'
 import SortFilterOption from '../SortFilterOption'
 import Gallery from '../Gallery'
 import './index.scss'
+import { Col, Container, Row } from 'react-bootstrap'
 
 
 function Brand() {
@@ -32,14 +33,27 @@ function Brand() {
                 <p className="lead mb-0">{brand.desc}</p>
             </div>
         </header>
-        <div className='products d-flex'> 
-            <aside>
-                <SortFilterOption productData={productData} setProductList={setProductList}/>
-            </aside>
-            <main>
-                <Gallery productList={productList} cols={4}/>
-            </main>
-        </div>
+
+        <Container fluid className='mt-3'>
+            <Row>
+                <Col lg={2} className='mb-5'>
+                    <aside>
+                        <SortFilterOption productData={productData} setProductList={setProductList}/>
+                    </aside>
+                </Col>
+                <Col lg={10}>
+                    {productList.length > 0 ?
+                        <main>
+                            <Gallery productList={productList} cols={4} />
+                        </main>:
+                        <main className='pe-5'>
+                            <h1>No Results Found.</h1>
+                            <h2>Try expanding your query or subscribe to our newsletter to receive a notification when this item is available.</h2>
+                        </main>
+                    }
+                </Col>
+            </Row>
+        </Container>
     </main>
     )
 }
