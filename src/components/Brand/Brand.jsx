@@ -1,12 +1,9 @@
 import React from 'react'
 import allBrands from '../../assets/json/Brands.json'
 import allProducts from '../../assets/json/Products.json'
-import { Badge, Button, Card, Col, Container, Pagination, Row, Stack, Image } from 'react-bootstrap'
-import { Link, useParams } from 'react-router-dom'
-import './index.scss'
+import {  useParams } from 'react-router-dom'
 import { useState } from 'react'
 import { useEffect } from 'react'
-import Products from '../Products'
 import SortFilterOption from '../SortFilterOption'
 import Gallery from '../Gallery'
 
