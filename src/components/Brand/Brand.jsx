@@ -1,23 +1,25 @@
 import React from 'react'
 import allBrands from '../../assets/json/Brands.json'
 import allProducts from '../../assets/json/Products.json'
-import {  useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import SortFilterOption from '../SortFilterOption'
 import Gallery from '../Gallery'
+import './index.scss'
 
 
 function Brand() {
     const [productData, setProductData] = useState(allProducts);
     const [productList, setProductList] = useState(allProducts);
     const { brandId } = useParams();
-    const [brand, setBrand] = useState(allBrands.filter((brand) => brand.id === brandId)[0]);
+    console.log(brandId, allBrands);
+    const [brand, setBrand] = useState(allBrands.filter((brand) => brand.id.toLowerCase() === brandId.toLowerCase())[0]);
 
     useEffect(() => {
-        const newBrand = allBrands.filter((brand) => brand.id === brandId)[0];
+        const newBrand = allBrands.filter((brand) => brand.id.toLowerCase() === brandId.toLowerCase())[0];
         setBrand(newBrand);
-        const brandProducts = allProducts.filter((product) => product.brand === newBrand.name);
+        const brandProducts = allProducts.filter((product) => product.brand.toLowerCase() === newBrand.name.toLowerCase());
         setProductData(brandProducts);
         setProductList(brandProducts);
     }, [brandId]);
@@ -25,11 +27,9 @@ function Brand() {
     return (
     <main>
         <header className="bg-light border-bottom py-2 mb-3">
-            <div className="container">
-                <div className="text-center my-3">
-                    <img className='w-25 h-auto' src={brand.logo} alt={brand.name + ' logo'}/>
-                    <p className="lead mb-0">{brand.desc}</p>
-                </div>
+            <div className="text-center my-3 mx-5">
+                <img className='brand-logo h-auto' src={brand.logo} alt={brand.name + ' logo'}/>
+                <p className="lead mb-0">{brand.desc}</p>
             </div>
         </header>
         <div className='products d-flex'> 
