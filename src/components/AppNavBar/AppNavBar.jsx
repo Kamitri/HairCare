@@ -26,7 +26,7 @@ function AppNavBar() {
                         <NavDropdown.Item as={Link} to={'/products/oil'} >Hair oils</NavDropdown.Item>
                         <NavDropdown.Item as={Link} to={'/products/dryer'} >Dryers</NavDropdown.Item>
                         <NavDropdown.Item as={Link} to={'/products/straightener'} >Straighteners</NavDropdown.Item>
-                        <NavDropdown.Item as={Link} to={'/products/spray-bottle'} >Hair oils</NavDropdown.Item>
+                        <NavDropdown.Item as={Link} to={'/products/spray-bottle'} >Spray bottles</NavDropdown.Item>
                         <NavDropdown.Item as={Link} to={'/products/steamer'} >Steamers</NavDropdown.Item>
                         <NavDropdown.Item as={Link} to={'/products/massager'} >Massager</NavDropdown.Item>
                         <NavDropdown.Item as={Link} to={'/products/spa-cap'} >Spa caps</NavDropdown.Item>
