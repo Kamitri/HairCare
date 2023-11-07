@@ -22,9 +22,9 @@ function ComparisonTable({comparisonList}) {
                 <td>{allCategories.filter((category) =>category.id === product.category)[0].title}</td>
                 <td>${parseFloat(product.price).toFixed(2)}</td>
                 <td>{product.rating}</td>
-                <td>{product.specifications.filter((spec) => spec[0] == 'Weight')[0] !== undefined ? product.specifications.filter((spec) => spec[0] === 'Weight')[0][1] : null
+                <td>{product.specifications.filter((spec) => spec[0] === 'Weight')[0] !== undefined ? product.specifications.filter((spec) => spec[0] === 'Weight')[0][1] : null
                 }</td>
-                <td>{product.specifications.filter((spec) => spec[0] == 'Volume')[0] !== undefined ? product.specifications.filter((spec) => spec[0] === 'Volume')[0][1] : null
+                <td>{product.specifications.filter((spec) => spec[0] === 'Volume')[0] !== undefined ? product.specifications.filter((spec) => spec[0] === 'Volume')[0][1] : null
                 }</td>
             </tr>
             )}

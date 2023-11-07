@@ -7,7 +7,7 @@ import './index.scss'
 
 function OurStory() {
   return (
-  <section>
+  <section data-aos='fade-up'>
     <div className='container mt-3 text-right'>
         <h2 className='section-title fw-bold'>Our Story</h2>
         <Container>
@@ -34,7 +34,7 @@ function TeamMember({ employeeId }) {
     return (
     <Card className='card-team-member m-3 w-100 h-100'>
         <div className='d-flex flex-row h-100'>
-            <img style={{'max-width': '30%', 'height': 'auto', objectFit: 'contain'}} className='img-fluid ms-3 rounded align-self-center' src={employee.avatar}/>
+            <img style={{'max-width': '30%', 'height': 'auto', objectFit: 'contain'}} className='img-fluid ms-3 rounded align-self-center' src={employee.avatar} alt={employee.name + ' avatar'}/>
             <div className='mx-4 d-flex flex-column justify-content-center'>
                 <h4 className='fw-bold'>{employee.name}</h4>
                 <h6 className='my-0'>{employee.role}</h6>
