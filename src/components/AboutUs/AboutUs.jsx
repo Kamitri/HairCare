@@ -59,7 +59,7 @@ function Team() {
                 <div className='section-title'>
                     <h2 className='fw-bold'>Meet Our Team</h2>
                 </div>
-                <p className='text-center'>Our team at HairCare is the heart of our commitment to exceptional hair care.   With experts in hair care, product development, and customer support, we collaborate to offer innovative  solutions tailored to your hair's unique needs. Get to know the faces behind the brand; we're here to guide  you on your hair care journey.</p>
+                <p className='text-center'>Our team at HairCare is the heart of our commitment to exceptional hair care. With experts in hair care, product development, and customer support, we collaborate to offer innovative solutions tailored to your hair's unique needs. Get to know the faces behind the brand; we're here to guide you on your hair care journey.</p>
             </section>
             <Container>
                 <Row>

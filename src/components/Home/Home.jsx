@@ -36,6 +36,7 @@ function Hero() {
 }
 
 function FeaturedProducts () {
+  // Next page / previous page slides endlessly in a loop, always show 4 products even if total featured products count is not divisible by 4.
   const cols = 4;
   const allFeaturedProducts = allProducts.filter((product) => product.featured === true);
   const [lastProductIndex, setLastProductIndex] = useState(cols - 1);
@@ -143,9 +144,7 @@ function FeaturedBrands () {
       <h2 className='section-title fw-bold'>Our partners</h2>
       <Container fluid>
         <Row className='justify-content-center'>
-          {allBrands.map((brand, i) => // TODO: Make image logo clickable in a larger, consistent square
-              getBrandImg(brand, i)
-          )}
+          {allBrands.map((brand, i) => getBrandImg(brand, i))}
         </Row>
       </Container>
     </section>

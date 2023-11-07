@@ -88,11 +88,8 @@ function BlogHome() {
             newPostData = newPostData.filter((post) => post.title.toLowerCase().includes(postTitleSearch.toLowerCase()))
         }
         if (postCategorySearch.length !== 0) {
-            console.log('a', postCategorySearch);
             newPostData = newPostData.filter((post) => postCategorySearch.includes(post.category))
-            console.log('ccc', newPostData);
         }
-        console.log('b', newPostData);
         setPostData(newPostData);
     }, [postTitleSearch, postCategorySearch])
 

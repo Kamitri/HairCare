@@ -4,7 +4,7 @@ import { useContext } from 'react'
 import ComparisonContext from '../ComparisonContext';
 import { Button, Table } from 'react-bootstrap';
 
-function ComparisonTable({comparisonList, setComparisonList}) {
+function ComparisonTable({comparisonList}) {
     return (
     <Table striped responsive hover>
         <thead>
