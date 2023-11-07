@@ -54,6 +54,117 @@
         ]
     },
     {
+        "id": "HairCareManufacturing-GlitterdreamSprayBottle",
+        "name": "HairCare Manufacturing Glitterdream Spray Bottle",
+        "brand": "HairCare Manufacturing",
+        "category": "spray-bottle",
+        "price": 1.99,
+        "featured": true,
+        "inStock": 194,
+        "colour": ["transparent"],
+        "images": [
+            "/img/hair-care-manufacturing/Glitterdream Spray Bottle 1.webp",
+            "/img/hair-care-manufacturing/Glitterdream Spray Bottle 2.webp",
+            "/img/hair-care-manufacturing/Glitterdream Spray Bottle 3.webp"
+        ],
+        "manual": "Using the Glitterdream spray bottle is a straightforward process. Begin by selecting the appropriate liquid, filling the bottle, and securing the cap. You can adjust the spray pattern by rotating the nozzle, and before spraying, it's crucial to prime the pump by squeezing it a few times to create pressure within the bottle. Aim, press the trigger, and adjust the nozzle if needed. After use, release any remaining pressure, clean the nozzle regularly, and store the spray bottle in a cool, dry place to keep it in optimal condition for a wide range of applications, from cleaning to gardening or personal care.",
+        "desc": "Introducing the Glitterdream Spray Bottle – your ticket to a world of shimmering, magical moments! This enchanting spray bottle is not your ordinary utility; it's a dazzling fusion of functionality and fantasy. Crafted to elevate your everyday routines, Glitterdream adds a touch of whimsy to your life.",
+        "rating": 4.9,
+        "specifications": [
+            ["Manufacturer", "HairCare Manufacturing"],
+            ["Made In", "Vietnam"],
+            ["Model Number", "12804821"],
+            ["Dimension", "8.0 x 8.0 x 15.6 cm"],
+            ["Capacity", "150 mL"],
+            ["Material", "PET, PP"]
+        ]
+    },
+    {
+        "id": "HairCareManufacturing-GlitterdreamSteamer",
+        "name": "HairCare Manufacturing Glitterdream Steamer",
+        "brand": "HairCare Manufacturing",
+        "category": "steamer",
+        "price": 29.95,
+        "featured": true,
+        "inStock": 2,
+        "colour": ["black"],
+        "images": [
+            "/img/hair-care-manufacturing/Glitterdream Steamer 1.jpg",
+            "/img/hair-care-manufacturing/Glitterdream Steamer 2.jpg",
+            "/img/hair-care-manufacturing/Glitterdream Steamer 3.jpg",
+            "/img/hair-care-manufacturing/Glitterdream Steamer 4.jpg",
+            "/img/hair-care-manufacturing/Glitterdream Steamer 5.jpg",
+            "/img/hair-care-manufacturing/Glitterdream Steamer 6.jpg",
+            "/img/hair-care-manufacturing/Glitterdream Steamer 7.jpg"
+        ],
+        "manual": "Using the Glitterdream hair steamer is a breeze. Fill the water reservoir with distilled water, and ensure that the device is placed on a flat, stable surface. Power it on, and the steamer will begin producing a fine mist. Adjust the steam level using the intuitive controls to suit your preferences. Position your hair in the steam's path, keeping a comfortable distance to prevent burns. Enjoy the soothing and hydrating mist as it nourishes your hair, enhancing the effectiveness of your hair care routine. After use, simply power off the steamer and unplug it. Remember to empty any remaining water from the reservoir and allow the device to cool before storing it. With Glitterdream Hair Steamer, you're on your way to luxuriously conditioned, vibrant hair.",
+        "desc": "The Glitterdream hair steamer is perfect for deep conditioning natural hair, masks, and oil treatments. The heat from the heat cap will open up the hair cuticle and allow products deeper penetration into strands. As a result, your products will be able to work better and help repair your hair. ",
+        "rating": 4.1,
+        "specifications": [
+            ["Manufacturer", "HairCare Manufacturing"],
+            ["Made In", "Vietnam"],
+            ["Model Number", "56806823"],
+            ["Dimension", "21.0 x 19.0 x 7.0 cm"],
+            ["Voltage", "110 V"],
+            ["Power", "45 W"]
+        ]
+    },
+    {
+        "id": "HairCareManufacturing-GlitterdreamMassager",
+        "name": "HairCare Manufacturing Glitterdream Scalp Exfoliator & Massager",
+        "brand": "HairCare Manufacturing",
+        "category": "massager",
+        "price": 12.99,
+        "featured": false,
+        "inStock": 49,
+        "colour": ["lilac"],
+        "images": [
+            "/img/hair-care-manufacturing/Glitterdream Massager 1.jpg",
+            "/img/hair-care-manufacturing/Glitterdream Massager 2.jpg",
+            "/img/hair-care-manufacturing/Glitterdream Massager 3.jpg",
+            "/img/hair-care-manufacturing/Glitterdream Massager 4.jpg",
+            "/img/hair-care-manufacturing/Glitterdream Massager 5.jpg"
+        ],
+        "manual": null,
+        "desc": "Featuring long, flexible teeth that help detox the scalp by removing product build-up and dead skin, while short, thick teeth stimulate pressure points for a relaxing massage, the Glitterdream hair massager is a multi-tasking marvel with dual teeth that help detox the scalp, clear product build-up, and provide some massage-based TLC.",
+        "rating": 4.5,
+        "specifications": [
+            ["Manufacturer", "HairCare Manufacturing"],
+            ["Made In", "Vietnam"],
+            ["Model Number", "HFO-23850"],
+            ["Dimension", "50.0 x 50.0 x 28.0 cm"],
+            ["Weight", "32.03 Grams"],
+            ["Power", "45 W"]
+        ]
+    },
+    {
+        "id": "HairCareManufacturing-GlitterdreamSpaCap",
+        "name": "HairCare Manufacturing Glitterdream Bouffant Spa Cap",
+        "brand": "HairCare Manufacturing",
+        "category": "spa-cap",
+        "price": 8.99,
+        "featured": false,
+        "inStock": 51,
+        "colour": ["black"],
+        "images": [
+            "/img/hair-care-manufacturing/Glitterdream Spa Cap 1.jpg",
+            "/img/hair-care-manufacturing/Glitterdream Spa Cap 2.jpg",
+            "/img/hair-care-manufacturing/Glitterdream Spa Cap 3.jpg",
+            "/img/hair-care-manufacturing/Glitterdream Spa Cap 4.jpg",
+            "/img/hair-care-manufacturing/Glitterdream Spa Cap 5.jpg"
+        ],
+        "manual": "Using the Glitterdream Spa Cap is a luxurious and simple process. Start by applying your favorite hair treatment or conditioner to your hair. Place the spa cap over your head, ensuring that your hair is entirely enclosed within it. Secure the cap snugly but comfortably using the adjustable strap. Activate the cap's built-in heating element to your desired temperature, and let it work its magic for the recommended treatment duration. Relax, unwind, and let the gentle warmth enhance the absorption of your hair treatment for soft, lustrous locks. When the treatment is complete, switch off the heating element and remove the cap, revealing your revitalized, pampered hair.",
+        "desc": "The Glitterdream Bouffant Spa Cap from HairCare Manufacturing offers sanitary comfort and simple convenience for the salon or spa. Our single-use line of wearables blends sophisticated design with practical functionality for an array of products ideal for sunless spray tanning, spa treatments, and other salon services. Each style is designed to provide a sanitary, single use solution for any spa treatment. Its one-size-fits-most style offers coverage and modesty to ensure client comfort.",
+        "rating": 4.4,
+        "specifications": [
+            ["Manufacturer", "HairCare Manufacturing"],
+            ["Made In", "Vietnam"],
+            ["Model Number", "01146164"],
+            ["Dimension", "27.9 x 25.4 x 5.1 cm"],
+            ["Weight", "2.0 Grams"]
+        ]
+    },
+    {
         "id": "Loreal-ElviveDreamCream",
         "name": "L'Oréal Paris Elvive Dream Lengths No Haircut Cream",
         "brand": "L'Oréal",
