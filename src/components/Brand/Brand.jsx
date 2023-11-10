@@ -48,7 +48,7 @@ function Brand() {
                         </main>:
                         <main className='pe-5'>
                             <h1>No Results Found.</h1>
-                            <h2>Try expanding your query or subscribe to our newsletter to receive a notification when this item is available.</h2>
+                            <h2>Try expanding your query or email us about any specific request you may have.</h2>
                         </main>
                     }
                 </Col>

@@ -23,6 +23,7 @@ function Manual({product}) {
 
 function Specifications({product}) {    
     const specAsElement = (specification) => {
+        if (specification[1] === null) return null;
         if (specification[0] !== "Ingredients")
         return <p><span className='fw-bold'>{specification[0]}:</span> {specification[1]}</p>
         else return null;
@@ -44,7 +45,7 @@ function Ingredients({product}) {
     return (
     <section className='py-3'>
         <h2>Ingredients</h2>
-        {ingredients.map((ingredient) => <span className='me-3'>{ingredient}</span>)}
+        {ingredients.map((ingredient) => <Badge bg='secondary' pill className='me-3 my-1 px-2 py-2'>{ingredient}</Badge>)}
     </section>
     )
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useMemo, useState } from 'react'
 import allProducts from '../../assets/json/Products.json'
 import Gallery from '../Gallery'
 import SortFilterOption from '../SortFilterOption'
@@ -8,14 +8,16 @@ import AdvancedPagination from '../AdvancedPagination/AdvancedPagination';
 import { Col, Container, Row } from 'react-bootstrap';
 
 function Products() {
-    let productData;
     const { category } = useParams();
-    if (category !== undefined & category !== 'all') {
-        productData = allProducts.filter((product) => product.category === category);
-    }
-    else {
-        productData = allProducts; 
-    } // productData is constantly equal to all product but limited to specific category
+    const [ productData, setProductData ] = useState(allProducts);
+    useEffect(() => {
+        if (category === undefined | category === 'all') {
+            setProductData(allProducts);
+        }
+        else {
+            setProductData(allProducts.filter((product) => product.category === category))
+        }}, 
+        [category]) // productData is constantly equal to all product but limited to specific category
 
     const productsPerPage = 8;
     const [productList, setProductList] = useState(productData);
@@ -23,6 +25,7 @@ function Products() {
     const [currentPage, setCurrentPage] = useState(1);
     const [maxPage, setMaxPage] = useState(1);
     useEffect(() => {
+        if (JSON.stringify(productList) === JSON.stringify(productData)) return;  // This will prevent recursive update by making sure these objects are different
         setProductList(productData);
     }, [productData])
     useEffect(() => {
@@ -33,7 +36,7 @@ function Products() {
         if (currentPage > newMaxPage) {
             setCurrentPage(newMaxPage);
         }
-    }, [productList])
+    }, [productList, currentPage])
 
     useEffect(() => {
         const indexFrom = (currentPage - 1) * productsPerPage;
@@ -52,12 +55,13 @@ function Products() {
                 <Col lg={10}>
                     {displayingProductList.length > 0 ?
                         <main>
+                            <h4 className='mb-3 ms-4'>Found {productList.length} products matching your queries.</h4>
                             <Gallery productList={displayingProductList} cols={4} />
                             <AdvancedPagination currentPage={currentPage} setCurrentPage={setCurrentPage} maxPage={maxPage}/>
                         </main>:
                         <main className='pe-5'>
                             <h1>No Results Found.</h1>
-                            <h2>Try expanding your query or subscribe to our newsletter to receive a notification when this     item    is available.</h2>
+                            <h2>Try expanding your query or email us about any specific request you may have.</h2>
                         </main>
                     }
                 </Col>
