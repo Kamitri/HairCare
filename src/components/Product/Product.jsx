@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
+import { Badge, Col, Container, Row } from 'react-bootstrap'
 import { useParams } from 'react-router-dom'
 import productList from '../../assets/json/Products.json'
 import ImageGallery from 'react-image-gallery'
@@ -83,20 +83,25 @@ function Product() {
                     </Col>
                     <div className="col-md-6">
                         <h1 className="fw-bold">{product.name}</h1>
-                        <div className="fs-5">
-                            <span>${product.price.toFixed(2)}</span>
-                        </div>
-                        <div className='d-flex align-items-center py-1'>
-                            <Rating name='product-rating' defaultValue={product.rating} precision={0.1} readOnly/>
+                        <Badge pill bg='secondary'>{product.inStock !== 0 ? product.inStock + " in stock" : "Out of stock"}</Badge>
+                        <div className="my-2 fs-5 d-flex justify-content-between">
+                            <span className='fw-bold'>${product.price.toFixed(2)}</span>
+                            <div className='d-flex align-items-center'>
+                                <Rating name='product-rating' defaultValue={product.rating} precision={0.1} readOnly/>
                             <span className='ps-1 fw-bold'>{product.rating}</span>
                         </div>
+                        </div>
+                        
                         <p className="lead">{product.desc}</p>
+                        {product.inStock !== 0 ? 
                         <div className="d-flex">
                             <input className="text-center me-3" id="product-quantity" type="number" style={{maxWidth: "3rem"}} value={ productQuantity } min={1} max={product.inStock} onChange={handleChangeProductQuantity}/>
                             <button className="btn-stylized px-4 py-1" onClick={handleAddToCart}>
                                 Add to cart
                             </button>
-                        </div>
+                        </div>:
+                        <h4>Not available for purchase.</h4>}
+                        
                     </div>
                 </Row>
                 <Row>
