@@ -2,7 +2,7 @@ import React from 'react'
 import allCategories from '../../assets/json/Categories.json'
 import { useContext } from 'react'
 import ComparisonContext from '../ComparisonContext';
-import { Button, Table } from 'react-bootstrap';
+import { Button, Container, Table } from 'react-bootstrap';
 
 function ComparisonTable({comparisonList}) {
     return (
@@ -43,6 +43,7 @@ function Compare() {
     }
     return (
     <main className='mt-5'>
+        <Container>
         {comparisonList.length > 0 ? 
         <div>
             <p className='text-center lead mb-5'>Still don't know what to buy? Let's plug those numbers in!</p>
@@ -53,6 +54,7 @@ function Compare() {
             <h1>You haven't selected any products for comparison yet!</h1>
             <h1>Click "Compare" on any products to begin evaluating.</h1>
         </div>}
+        </Container>
     </main>
     )
 }

@@ -38,7 +38,7 @@ function GalleryItem({product}) {
                 </div>
                 <div className='d-flex mt-auto align-items-end'>
                 <Card.Text className='pricetag fw-bold mb-0'>${product.price.toFixed(2)}</Card.Text>
-                {
+                    {
                         productInComparison ? 
                         <Button className='ms-auto' variant='danger' onClick={handleRemoveFromComparison}>Remove</Button> :
                         <Button className='ms-auto' variant='primary' onClick={handleAddToComparison}>Compare</Button>

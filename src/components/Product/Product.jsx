@@ -1,11 +1,11 @@
-import React from 'react'
-import { Carousel, Col, Container, Row } from 'react-bootstrap'
+import React, { useContext, useState } from 'react'
+import { Col, Container, Row } from 'react-bootstrap'
 import { useParams } from 'react-router-dom'
 import productList from '../../assets/json/Products.json'
-import { useState } from 'react';
 import ImageGallery from 'react-image-gallery'
 import { Rating } from '@mui/material';
 import './index.scss'
+import CartContext from '../CartContext'
 
 function Manual({product}) {
     return (
@@ -51,8 +51,29 @@ function Ingredients({product}) {
 
 function Product() {
     const { productId } = useParams();
+    const [ productQuantity, setProductQuantity ] = useState(1);
+    const { shoppingCart, setShoppingCart } = useContext(CartContext);
     const product = productList.filter((prod) => prod.id === productId)[0];
     const images = product.images.map((image) => ({'original': image, 'originalHeight': '400px'}))
+
+    function handleAddToCart() {
+        let newShoppingCart = [...shoppingCart];
+        // Check if the cart already has this item. If it does, increment instead of pushing
+        const productInCart = newShoppingCart.filter((product) => product.id === productId);
+        if (productInCart.length !== 0) {
+            newShoppingCart = newShoppingCart.filter((product) => product.id !== productId);
+            newShoppingCart.push({'id': productId, 'quantity': productInCart[0].quantity + productQuantity})
+        }
+        else {
+            newShoppingCart.push({'id': productId, 'quantity': productQuantity})
+        }
+        setShoppingCart(newShoppingCart);
+    }
+
+    function handleChangeProductQuantity(e) {
+        setProductQuantity(parseInt(e.target.value));
+    }
+
     return (
         <main> 
             <Container className="px-4 my-5">
@@ -71,8 +92,8 @@ function Product() {
                         </div>
                         <p className="lead">{product.desc}</p>
                         <div className="d-flex">
-                            <input className="text-center me-3" id="input-quantity" type="num" value="1" style={{maxWidth: "3rem"}} />
-                            <button className="btn-stylized px-4 py-1" type="button">
+                            <input className="text-center me-3" id="product-quantity" type="number" style={{maxWidth: "3rem"}} value={ productQuantity } min={1} max={product.inStock} onChange={handleChangeProductQuantity}/>
+                            <button className="btn-stylized px-4 py-1" onClick={handleAddToCart}>
                                 Add to cart
                             </button>
                         </div>

@@ -1,18 +1,22 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import './index.scss'
-import { Navbar, NavbarBrand, NavDropdown, Nav } from 'react-bootstrap'
+import CartContext from '../CartContext'
+import { Navbar, NavbarBrand, NavDropdown, Nav, Button, Container, Form, Badge } from 'react-bootstrap'
+import { FaCartShopping } from 'react-icons/fa6'
 
 function AppNavBar() {
+    const { shoppingCart, setShoppingCart } = useContext(CartContext);
     const location = useLocation();
     return (
-       <Navbar expand='lg' className='navbar-dark'>
-            <NavbarBrand href="#">
-                <img src="/logo.png" height="30" alt="HairCare Logo"/>
-            </NavbarBrand>
-            <Navbar.Toggle aria-controls="app-navbar" />
-            <Navbar.Collapse id="app-navbar">
-                <Nav className='ms-3' style={{gap: "5vh"}}>
+        <Navbar expand='lg' className='navbar-dark pt-3'>
+            <Container fluid>
+                <NavbarBrand href="#">
+                    <img src="/logo.png" height="30" alt="HairCare Logo"/>
+                </NavbarBrand>
+                <Navbar.Toggle aria-controls="app-navbar" />
+                <Navbar.Collapse id="app-navbar">
+                    <Nav className='me-5' style={{gap: "5vh"}}>
                     <Link className={'nav-item nav-link ' + (location.pathname === '/' ? "link-active" : '')} to="/">HOME</Link>
                     <Link className={"nav-item nav-link " + (location.pathname === '/blog' ? "link-active" : '')} to="/blog">BLOG</Link>
                     <NavDropdown className={location.pathname.includes('/products') ? "link-active" : ''} title='STORE'>
@@ -39,9 +43,19 @@ function AppNavBar() {
                     <Link className={'nav-item nav-link ' + (location.pathname === '/compare' ? "link-active" : '')} to="/compare">COMPARE</Link>
                     <Link className={'nav-item nav-link ' + (location.pathname === '/contact-us' ? "link-active" : '')} to="/contact-us">CONTACT US</Link>
                     <Link className={'nav-item nav-link ' + (location.pathname === '/about-us' ? "link-active" : '')} to="/about-us">ABOUT US</Link>
-                </Nav>
-            </Navbar.Collapse>
-       </Navbar>
+                    </Nav>
+                    <Link to='/cart'>
+                        <button className='btn-primary-stylized px-3 py-1 d-flex align-items-center' >
+                            <FaCartShopping className='me-1'/>
+                            Cart
+                            <Badge className='ms-1' bg="secondary">
+                                { shoppingCart.length === 0 ? 0 : shoppingCart.length === 1 ? shoppingCart[0].quantity : shoppingCart.reduce((sum, product) => sum + product.quantity, 0) }
+                            </Badge>
+                        </button>
+                    </Link>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
     )
 }
 

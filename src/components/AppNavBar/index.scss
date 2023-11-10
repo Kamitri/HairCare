@@ -1,12 +1,13 @@
-@import '../../App.scss';
+@import '../../index.scss';
 
 .navbar {
     background-color: $bg;
 }
 
-.navbar-brand {
-    margin-left: 1%;
+a {
+    text-decoration: none !important;
 }
+
 
 .navbar-nav {
     align-content: space-between;
@@ -19,11 +20,4 @@
 .dropdown-toggle.nav-link {
     
     color: white;
-}
-
-.link-active {
-    .dropdown-toggle.nav-link {
-        color: $tertiary !important;
-    }
-    color: $tertiary !important;
 }

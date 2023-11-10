@@ -34,6 +34,26 @@ body {
   }
 }
 
+.btn-primary-stylized {
+  letter-spacing: 1px;
+  display: inline-block;
+  border-radius: 5px;
+  transition: 0.3s;
+  background-color: $tertiary !important;
+  animation-delay: 0.8s;
+  border: 2px solid $tertiary;
+  cursor: pointer;
+  text-decoration: none !important;
+
+  &:hover {
+      background-color: white !important;
+      color: $tertiary;
+
+      .badge {
+        background-color: $tertiary !important;
+      }
+    }
+}
 
 
 .btn-stylized {

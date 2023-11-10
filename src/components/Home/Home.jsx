@@ -18,7 +18,9 @@ function Hero() {
               <h2>At HairCare, we offer our expertise to transform your hair journey. Our mission is to empower you with the knowledge, products, and guidance needed to achieve hair that truly reflects your unique beauty.</h2>
               <div className='d-flex justify-content-center justify-content-lg-start'>
                 <Link to='/products'>
-                  <btn className='btn-stylized-alt px-3 py-2'><FaShop className='me-2'/>Browse Store</btn>
+                  <btn className='btn-stylized-alt px-3 py-2'>
+                    <FaShop className='me-2'/>
+                    Browse Store</btn>
                 </Link>
               </div>
             </Col>
