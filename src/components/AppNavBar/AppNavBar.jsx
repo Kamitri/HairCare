@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import './index.scss'
 import CartContext from '../CartContext'
-import { Navbar, NavbarBrand, NavDropdown, Nav, Button, Container, Form, Badge } from 'react-bootstrap'
+import { Navbar, NavbarBrand, NavDropdown, Nav, Container, Badge } from 'react-bootstrap'
 import { FaCartShopping } from 'react-icons/fa6'
 
 function AppNavBar() {
@@ -38,6 +38,7 @@ function AppNavBar() {
                     <NavDropdown className={location.pathname.includes('/brand') ? "link-active" : ''} title='BRANDS'>
                         <NavDropdown.Item as={Link} to={'/brand/hair-care-manufacturing'}>HairCare Manufacturing</NavDropdown.Item>
                         <NavDropdown.Item as={Link} to={'/brand/loreal'}>L'Oréal</NavDropdown.Item>
+                        <NavDropdown.Item as={Link} to={'/brand/head-and-shoulders'}>Head & Shoulders</NavDropdown.Item>
                         <NavDropdown.Item as={Link} to={'/brand/philips'}>Philips</NavDropdown.Item>
                     </NavDropdown>
                     <Link className={'nav-item nav-link ' + (location.pathname === '/compare' ? "link-active" : '')} to="/compare">COMPARE</Link>
