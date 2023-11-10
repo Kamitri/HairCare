@@ -2,23 +2,30 @@ import React from 'react'
 import allCategories from '../../assets/json/Categories.json'
 import { useContext } from 'react'
 import ComparisonContext from '../ComparisonContext';
-import { Button, Container, Table } from 'react-bootstrap';
+import { Button, Container, Image, Table } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import './index.scss'
 
 function ComparisonTable({comparisonList}) {
     return (
-    <Table striped responsive hover>
+    <Table responsive hover>
         <thead>
-            <th style={{width: '45%'}}>Title</th>
-            <th style={{width: '10%'}}>Category</th>
+            <th style={{width: '35%'}}>Title</th>
+            <th style={{width: '25%'}}>Preview</th>
+            <th style={{width: '5%'}}>Category</th>
             <th style={{width: '10%'}}>Price</th>
             <th style={{width: '5%'}}>Rating</th>
-            <th style={{width: '10%'}}>Weight (if any)</th>
-            <th style={{width: '10%'}}>Volume (if any)</th>
+            <th style={{width: '5%'}}>Weight (if any)</th>
+            <th style={{width: '5%'}}>Volume (if any)</th>
         </thead>
         <tbody>
             {comparisonList.map((product) =>
-            <tr>
-                <td>{product.name}</td>
+            <tr data-href="https://google.com">
+                <td><Link className='no-style' to={`/product/${product.id}`}>{product.name}</Link></td>
+                <td>
+                    <Image style={{maxHeight: '18vh'}} fluid src={ product.images[0] }>
+                    </Image>
+                </td>
                 <td>{allCategories.filter((category) =>category.id === product.category)[0].title}</td>
                 <td>${parseFloat(product.price).toFixed(2)}</td>
                 <td>{product.rating}</td>

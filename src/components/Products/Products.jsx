@@ -4,6 +4,7 @@ import Gallery from '../Gallery'
 import SortFilterOption from '../SortFilterOption'
 import { useParams } from 'react-router-dom';
 import { useEffect } from 'react';
+import './index.scss'
 import AdvancedPagination from '../AdvancedPagination/AdvancedPagination';
 import { Col, Container, Row } from 'react-bootstrap';
 

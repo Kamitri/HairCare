@@ -34,6 +34,10 @@ body {
   }
 }
 
+.no-style {
+  color: $bg;
+}
+
 .btn-primary-stylized {
   letter-spacing: 1px;
   display: inline-block;

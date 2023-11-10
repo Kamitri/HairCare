@@ -1,7 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { Col, Container, Form, Row, Table } from 'react-bootstrap'
+import { Col, Container, Form, Image, Row, Table } from 'react-bootstrap'
 import CartContext from '../CartContext';
 import allProducts from '../../assets/json/Products.json'
+import { Link } from 'react-router-dom';
 
 
 function CustomerInfo({ total }) {
@@ -65,22 +66,31 @@ function CartTable({ shoppingCart, total, setTotal }) {
 	  }, [shoppingCart]);
 
     return (
-    <Table striped responsive hover>
+    <Table responsive hover>
         <thead>
-            <th style={{width: '70%'}}>Products</th>
+            <th style={{width: '40%'}}>Products</th>
+            <th style={{width: '30%'}}>Preview</th>
             <th style={{width: '15%'}}>Quantity</th>
             <th style={{width: '15%'}}>Price</th>
         </thead>
         <tbody>
             {shoppingCart.map((productInfo) => 
             <tr>
-                <td>{ allProducts.filter((product) => product.id === productInfo.id)[0].name }</td>
+                <td>
+                    <Link className='no-style' to={`/product/${productInfo.id}`}>
+                        { allProducts.filter((product) => product.id === productInfo.id)[0].name }
+                    </Link>
+                </td>
+                <td>
+                    <Image style={{maxHeight: '18vh'}} fluid src={ allProducts.filter((product) => product.id === productInfo.id)[0].images[0] }>
+                    </Image>
+                </td>
                 <td>{ productInfo.quantity }</td>
                 <td>{ '$' + parseFloat(allProducts.filter((product) => product.id === productInfo.id)[0].price).toFixed(2) }</td>
             </tr>
             )}
             <tr>
-                <td colSpan={2}><b>Total</b></td>
+                <td colSpan={3}><b>Total</b></td>
                 <td> 
                     { '$' + total }
                 </td>
