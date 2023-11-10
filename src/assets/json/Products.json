@@ -195,6 +195,34 @@
         ]
     },
     {
+        "id": "head-and-shoulders-royal-oils-scalp-cream",
+        "name": "Head & Shoulders Royal Oils Scalp Cream",
+        "brand": "Head & Shoulders",
+        "category": "hair-cream",
+        "price": 10.99,
+        "featured": false,
+        "inStock": 41,
+        "colour": [],
+        "images": [
+            "/img/head-and-shoulders/Royal Oils Scalp Cream 1.jpg",
+            "/img/head-and-shoulders/Royal Oils Scalp Cream 2.jpg",
+            "/img/head-and-shoulders/Royal Oils Scalp Cream 3.jpg",
+            "/img/head-and-shoulders/Royal Oils Scalp Cream 4.jpg",
+            "/img/head-and-shoulders/Royal Oils Scalp Cream 5.jpg"
+        ],
+        "manual": "Use daily to nourish and protect scalp. Place the tip directly on scalp and squeeze bottle, moving from front of scalp to back, ensuring the entire scalp is treated. Use fingers to massage into scalp. Can be used up to four times daily. *With regular use.",
+        "desc": "Prevent dryness and itch, seal in moisture and extend the life of your favorite hairstyle with Head & Shoulders Royal Oils Daily Moisture Scalp Cream. This leave-in, daily hair moisturizer helps restore scalp health* and provides all day protection*, resulting in beautiful, healthy hair. The light, absorbing formula is great as a leave in conditioner, and can be used up to four times daily. Expertly designed specifically for natural, relaxed, kinky, and coily hair types, this itchy scalp treatment is dye and sulfate free, and free of mineral oils. It’s the perfect deep conditioner for protective styles, twists and locs, with no need to rinse. Anoint your crown with nothing but the best scalp care. Developed for Black hair by Black scientists, the entire Head and Shoulders Royal Oils line helps balance natural moisture levels for healthy hair and scalp.",
+        "rating": 4.4,
+        "specifications": [
+            ["Manufacturer", "Procter & Gamble - HABA Hub"],
+            ["Made In", "USA"],
+            ["Model Number", "77948"],
+            ["Dimension", "1.73 x 1.73 x 6.75 inches"],
+            ["Weight", "5.44 Ounces"],
+            ["Volume", "148 mL"]
+        ]
+    },
+    {
         "id": "Loreal-ElviveDreamMask",
         "name": "L'Oréal Paris Elvive Dream Lengths Hair Mask",
         "brand": "L'Oréal",
@@ -345,6 +373,37 @@
         ]
     },
     {
+        "id": "head-and-shoulders-royal-oils-conditioner",
+        "name": "Head & Shoulders Royal Oils Scalp Balancing Conditioner",
+        "brand": "Head & Shoulders",
+        "category": "conditioner",
+        "price": 6.97,
+        "featured": true,
+        "inStock": 0,
+        "colour": [],
+        "images": [
+            "/img/head-and-shoulders/Royal Oils Conditioner 1.jpg",
+            "/img/head-and-shoulders/Royal Oils Conditioner 2.jpg",
+            "/img/head-and-shoulders/Royal Oils Conditioner 3.jpg",
+            "/img/head-and-shoulders/Royal Oils Conditioner 4.jpg",
+            "/img/head-and-shoulders/Royal Oils Conditioner 5.jpg",
+            "/img/head-and-shoulders/Royal Oils Conditioner 6.jpg"
+        ],
+        "manual": "For best results use at least twice a week or as directed by a doctor. Apply to wet hair after shampooing by gently massaging onto hair and scalp, rinse well.",
+        "desc": "Indulge your scalp and hair with the decadent moisture of Head & Shoulders Royal Oils Moisture Renewal Conditioner with Coconut Oil. Starting on day 1, this moisturizing formula helps balance essential scalp moisture giving you long-lasting protection.* Use it on wash days after shampooing to soak scalp in lasting moisture.* This sulfate, paraben and dye-free conditioner is the perfect way to give all natural, relaxed, kinky and coily hair types a boost of lasting nourishment and scalp protection.* Proudly recommended by My Black is Beautiful.*with regular use",
+        "rating": 4.7,
+        "specifications": [
+            ["Manufacturer", "Procter & Gamble"],
+            ["Made In", "USA"],
+            ["Model Number", "037000779322"],
+            ["Dimension", "1.76 x 3.03 x 8.31 inches"],
+            ["Weight", "13.6 Ounces"],
+            ["Volume", "400 mL"],
+            ["Ingredients", ["Pyrithione zinc 0.5%", "Water", "Stearyl Alcohol", "Dimethicone", "Behentrimonium Chloride", "Cetyl Alcohol", "Cocos Nucifera (Coconut) Fruit Extract", "Vinegar", "Zea Mays (Corn) Silk Extract", "Fragrance", "Phenoxyethanol", "Benzyl Alcohol", "Citric Acid", "Methylchloroisothiazolinone", "Methylisothiazolinone"]
+            ]
+        ]
+    },
+    {
         "id": "Loreal-ElviveDreamSerum",
         "name": "L'Oreal Paris Elvive Dream Lengths Frizz Killer Leave-In Serum",
         "brand": "L'Oréal",
@@ -372,6 +431,33 @@
             ["Volume", "100 mL"],
             ["Ingredients", ["Castor Oil", "Water", "Glycerin", "Vp/Va Copolymer Peg-40", "Hydrogenated Castor Oil", "Hydroxyethylcellulose", "Phenoxyethanol", "Parfum / Fragrance", "Ethylhexylglycerin", "Behentrimonium Chloride", "Polyquaternium-6", "Hydroxyethyl Oleyl", "Dimonium Chloride", "Cetrimonium Chloride", "Isopropyl Alcohol", "Hexyl Cinnamal", "Benzyl Salicylate Linalool", "Benzyl Alcohol", "Ricinus", "Communis", "Seed Oil / Castor Seed Oil", "Theobroma", "Cacao Seed", "Butter / Cocoa Seed", "Butter", "Limonene", "Alpha-Isomethyl Ionone", "Hydrolyzed Wheat Protein", "Coumarin", "Citronellol", "Hydroxycitronellal", "Geraniol", "Hydrolyzed Corn Protein", "Hydrolyzed Soy Protein", "Tetrasodium Edta", "Tocopherol", "Ci 19140 / Yellow 5 Ci 17200 / Red 33"]
         ]
+        ]
+    },
+    {
+        "id": "head-and-shoulders-supreme-hydrating-scalp-serum",
+        "name": "Head & Shoulders Supreme Hydrating Scalp Serum",
+        "brand": "Head & Shoulders",
+        "category": "serum",
+        "price": 12.49,
+        "featured": false,
+        "inStock": 2,
+        "colour": [],
+        "images": [
+            "/img/head-and-shoulders/Supreme Hydrating Scalp Serum 1.jpg",
+            "/img/head-and-shoulders/Supreme Hydrating Scalp Serum 2.jpg",
+            "/img/head-and-shoulders/Supreme Hydrating Scalp Serum 3.jpg",
+            "/img/head-and-shoulders/Supreme Hydrating Scalp Serum 4.jpg"
+        ],
+        "manual": "Apply to affected areas one to four times daily or as directed by a doctor. Twist the cap open. Place tip directly onto scalp (damp or dry). Gently squeeze the bottle while moving tip from front to back of your scalp. Repeat to cover your entire scalp. Massage for even distribution. Do not rinse.",
+        "desc": "Beautiful hair starts with a healthy scalp. Hydrate yours with Supreme hydrating scalp serum, brought to you by Head & Shoulders, America's #1 dermatologist-recommended brand. Infused with Vitamin E and Argan Oil, this hydrating scalp treatment reinvigorates scalp in between washes leaving it refreshed and renewed. To use it, add a few drops directly to your scalp anytime, anywhere.",
+        "rating": 4.3,
+        "specifications": [
+            ["Manufacturer", " L'Oreal Paris"],
+            ["Made In", "USA"],
+            ["Model Number", "037000538462"],
+            ["Dimension", "1.3 x 1.3 x 4.49 inches"],
+            ["Weight", "1.6 Ounces"],
+            ["Volume", "38.4 mL"]
         ]
     },
     {
