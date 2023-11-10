@@ -16,5 +16,11 @@
         "name": "Philips",
         "logo": "/img/Philips/logo.png",
         "desc": "Experience the future of technology with Philips, a world renowned electronics manufacturer committed to innovation and excellence. With a history of pioneering cutting-edge electronics, healthcare solutions, and household appliances, Philips is your trusted partner in enhancing your everyday life. From smart devices to healthcare advancements, Philips offers a diverse range of high-quality products designed to make your world smarter, healthier, and more convenient."
+    },
+    {
+        "id": "head-and-shoulders",
+        "name": "Head & Shoulders",
+        "logo": "/img/head-and-shoulders/logo.webp",
+        "desc": "Welcome to Head & Shoulders, a trusted name in dandruff care and a global leader in hair solutions. Renowned for its effective dandruff control, Head & Shoulders brings decades of expertise and innovation to ensure a healthy, flake-free scalp. Beyond dandruff care, explore a diverse range of hair products designed to meet various needs. Discover the confidence that comes with a healthy scalp and beautiful hair with Head & Shoulders."
     }
 ]

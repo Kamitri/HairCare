@@ -254,6 +254,68 @@
         ]
     },
     {
+        "id": "head-and-shoulders-clinical-dandruff-defense-intensive-itch-shampoo",
+        "name": "Head & Shoulders Clinical Dandruff Defense Intensive Itch Shampoo",
+        "brand": "Head & Shoulders",
+        "category": "shampoo",
+        "price": 9.99,
+        "featured": true,
+        "inStock": 85,
+        "colour": [],
+        "images": [
+            "/img/head-and-shoulders/Clinical Dandruff Defense Intensive Itch Shampoo 1.jpg",
+            "/img/head-and-shoulders/Clinical Dandruff Defense Intensive Itch Shampoo 2.jpg",
+            "/img/head-and-shoulders/Clinical Dandruff Defense Intensive Itch Shampoo 3.jpg",
+            "/img/head-and-shoulders/Clinical Dandruff Defense Intensive Itch Shampoo 4.jpg",
+            "/img/head-and-shoulders/Clinical Dandruff Defense Intensive Itch Shampoo 5.jpg",
+            "/img/head-and-shoulders/Clinical Dandruff Defense Intensive Itch Shampoo 6.jpg",
+            "/img/head-and-shoulders/Clinical Dandruff Defense Intensive Itch Shampoo 7.jpg"
+        ],
+        "manual": "For best results use at least twice a week or as directed by a doctor. For maximum control, use every time you shampoo. Shake before use. Wet hair, massage onto scalp, rinse, repeat if desired. Caution: if used on bleached, tinted, grey, or permed hair, rinse for 5 minutes.",
+        "desc": "Introducing NEW Head & Shoulders Clinical Strength Dandruff Defense Intensive Itch Relief Shampoo, brought to you by America's #1 dermatologist-recommended brand. Our formula provides prescription strength flake protection (vs prescription dandruff shampoo 2% ketoconazole) and provides soothing relief from itch associated with dandruff. Clinically proven to protect against flakes and dandruff, our shampoo is a great remedy for an itchy scalp. Clinical Strength Dandruff Defense + Intensive Itch Relief shampoo is infused with intense cooling menthol. Soothe your scalp and hair for a healthy, vibrant look you'll love.",
+        "rating": 4.6,
+        "specifications": [
+            ["Manufacturer", " Head & Shoulders"],
+            ["Made In", "USA"],
+            ["Model Number", "030772035948"],
+            ["Dimension", "22.9 x 15.2 x 4.7 cm"],
+            ["Weight", "382.7 Grams"],
+            ["Volume", "400 mL"],
+            ["Ingredients", ["Selenium Sulfide 1%", "Water", "Ammonium Laureth Sulfate", "Ammonium Lauryl Sulfate", "Glycol Distearate", "Cocamide Mea", "Ammonium Xylenesulfonate", "Sodium Citrate", "Dimethicone", "Menthol", "Cetyl Alcohol", "Fragrance", "Citric Acid", "Sodium Chloride", "Sodium Benzoate", "Disodium Edta", "Stearyl Alcohol", "Hydroxypropyl Methylcellulose", "Mentha Piperita (Peppermint) Oil", "Mentha Arvensis Leaf Oil", "Methylchloroisothiazolinone", "Methylisothiazolinone", "Red 4"]
+            ]
+        ]
+    },
+    {
+        "id": "head-and-shoulders-clinical-dandruff-defense-advanced-oil-control-shampoo",
+        "name": "Head & Shoulders Clinical Dandruff Defense Advanced Oil Control Shampoo",
+        "brand": "Head & Shoulders",
+        "category": "shampoo",
+        "price": 9.99,
+        "featured": false,
+        "inStock": 0,
+        "colour": [],
+        "images": [
+            "/img/head-and-shoulders/Clinical Dandruff Defense Advanced Oil Control Shampoo 1.jpg",
+            "/img/head-and-shoulders/Clinical Dandruff Defense Advanced Oil Control Shampoo 2.jpg",
+            "/img/head-and-shoulders/Clinical Dandruff Defense Advanced Oil Control Shampoo 3.jpg",
+            "/img/head-and-shoulders/Clinical Dandruff Defense Advanced Oil Control Shampoo 4.jpg",
+            "/img/head-and-shoulders/Clinical Dandruff Defense Advanced Oil Control Shampoo 5.jpg",
+            "/img/head-and-shoulders/Clinical Dandruff Defense Advanced Oil Control Shampoo 6.jpg",
+            "/img/head-and-shoulders/Clinical Dandruff Defense Advanced Oil Control Shampoo 7.jpg"
+        ],
+        "manual": "For best results use at least twice a week or as directed by a doctor. For maximum control, use every time you shampoo. Shake before use. Wet hair, massage onto scalp, rinse, repeat if desired. Caution: if used on bleached, tinted, grey, or permed hair, rinse for 5 minutes.",
+        "desc": "Introducing NEW Head & Shoulders Clinical Strength Dandruff Defense + Advanced Oil Control Shampoo, brought to you by America's #1 dermatologist-recommended brand. Our formula provides prescription strength flake protection (vs prescription dandruff shampoo 2% ketoconazole) and removes oil and flakes to relieve dandruff symptoms. Clinically proven to protect against flakes and dandruff, our shampoo is a great remedy for an oily scalp. Clinical Strength Dandruff Defense Advanced Oil Control shampoo is infused with refreshing citrus. Soothe your scalp and hair for a healthy, vibrant look you'll love.",
+        "rating": 4.6,
+        "specifications": [
+            ["Manufacturer", " Head & Shoulders"],
+            ["Made In", "USA"],
+            ["Model Number", "037000874447"],
+            ["Dimension", "22.9 x 15.2 x 4.7 cm"],
+            ["Weight", "405.5 Grams"],
+            ["Volume", "400 mL"]
+        ]
+    },
+    {
         "id": "Loreal-ElviveDreamConditioner",
         "name": "L'Oreal Paris Elvive Dream Lengths Super Detangling Conditioner",
         "brand": "L'Oréal",
