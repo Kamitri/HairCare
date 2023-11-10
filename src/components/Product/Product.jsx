@@ -84,6 +84,8 @@ function Product() {
                     <div className="col-md-6">
                         <h1 className="fw-bold">{product.name}</h1>
                         <Badge pill bg='secondary'>{product.inStock !== 0 ? product.inStock + " in stock" : "Out of stock"}</Badge>
+                        {product.featured && 
+                        <Badge pill className='ms-2' bg='success'>Featured Product</Badge>}
                         <div className="my-2 fs-5 d-flex justify-content-between">
                             <span className='fw-bold'>${product.price.toFixed(2)}</span>
                             <div className='d-flex align-items-center'>
