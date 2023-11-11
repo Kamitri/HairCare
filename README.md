@@ -26,7 +26,7 @@
 Created with ReactJS + SCSS + Bootstrap <i>(No backend)</i>
 
 ## Group 6
-<strong>Nguyễn Minh Trí</strong> `Student1491492` </br>
+<strong>Nguyễn Minh Trí</strong> <i>(leader)</i> `Student1491492` </br>
 Nguyễn Đinh Minh Hiển <i>(absent)</i> `Student1477471` </br>
 Nguyễn Hùng Dũng <i>(absent)</i> `Student1491485` </br>
 
