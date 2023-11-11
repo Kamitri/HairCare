@@ -1,0 +1,110 @@
+<mxfile host="app.diagrams.net" modified="2023-10-26T11:12:52.641Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0" etag="9Gjl1Zb7zg9ru4ftNEM-" version="22.0.8" type="device">
+  <diagram name="Page-1" id="sAOJ5SrDfzlhlrvFXXsP">
+    <mxGraphModel dx="955" dy="482" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="r9LU1n8cO8k18PTNaj-M-6" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="400" y="135" width="160" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="nBLHbdXHp7UiOyoCYOLu-33" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="160" y="130" width="200" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="nBLHbdXHp7UiOyoCYOLu-15" value="&lt;div&gt;Home&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="210" y="170" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nBLHbdXHp7UiOyoCYOLu-17" value="Common Hair Problems" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="430" y="160" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nBLHbdXHp7UiOyoCYOLu-23" value="Products" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="210" y="270" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nBLHbdXHp7UiOyoCYOLu-26" value="Compare" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="210" y="370" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nBLHbdXHp7UiOyoCYOLu-28" value="&lt;div&gt;Contact Us&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="210" y="420" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nBLHbdXHp7UiOyoCYOLu-29" value="About Us" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="210" y="470" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nBLHbdXHp7UiOyoCYOLu-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="nBLHbdXHp7UiOyoCYOLu-30" target="nBLHbdXHp7UiOyoCYOLu-33" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nBLHbdXHp7UiOyoCYOLu-30" value="Navigation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="50" y="320" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="r9LU1n8cO8k18PTNaj-M-1" value="Brands" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="210" y="320" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="r9LU1n8cO8k18PTNaj-M-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" target="r9LU1n8cO8k18PTNaj-M-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="239.55" as="sourcePoint" />
+            <mxPoint x="390" y="239.55" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r9LU1n8cO8k18PTNaj-M-3" value="Blog" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="210" y="220" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="r9LU1n8cO8k18PTNaj-M-4" value="R&amp;amp;D in Hair Care" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="430" y="280" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="r9LU1n8cO8k18PTNaj-M-5" value="Home Remedies" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="430" y="220" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="r9LU1n8cO8k18PTNaj-M-7" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="590" y="135" width="250" height="415" as="geometry" />
+        </mxCell>
+        <mxCell id="r9LU1n8cO8k18PTNaj-M-8" value="Hair Cream" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="720" y="150" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="r9LU1n8cO8k18PTNaj-M-9" value="&lt;div&gt;Shampoo&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="610" y="150" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="r9LU1n8cO8k18PTNaj-M-10" value="Mask" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="720" y="210" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="r9LU1n8cO8k18PTNaj-M-11" value="Conditioner" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="610" y="210" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="r9LU1n8cO8k18PTNaj-M-12" value="Serum" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="610" y="270" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="r9LU1n8cO8k18PTNaj-M-13" value="&lt;div&gt;Hairspray&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="720" y="270" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="r9LU1n8cO8k18PTNaj-M-15" value="Hair oil" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="610" y="322.5" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="r9LU1n8cO8k18PTNaj-M-18" value="Dryer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="720" y="322.5" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="r9LU1n8cO8k18PTNaj-M-19" value="Straightener" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="610" y="380" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="r9LU1n8cO8k18PTNaj-M-20" value="Massager" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="720" y="440" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="r9LU1n8cO8k18PTNaj-M-21" value="Spray Bottle" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="720" y="380" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="r9LU1n8cO8k18PTNaj-M-22" value="Steamer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="610" y="440" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="r9LU1n8cO8k18PTNaj-M-24" value="Spa Cap" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="665" y="500" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="r9LU1n8cO8k18PTNaj-M-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.005;entryY=0.603;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="r9LU1n8cO8k18PTNaj-M-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="289.5" as="sourcePoint" />
+            <mxPoint x="400" y="289.95" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="390" y="290" />
+              <mxPoint x="390" y="385" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
