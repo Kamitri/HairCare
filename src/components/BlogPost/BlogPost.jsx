@@ -1,8 +1,32 @@
 import React from 'react'
 import allPosts from '../../assets/json/Posts.json'
-import { Badge, Col, Container, Row, Stack } from 'react-bootstrap'
-import { useParams } from 'react-router-dom'
+import allProducts from '../../assets/json/Products.json'
+import { Badge, Card, Col, Container, Row, Stack } from 'react-bootstrap'
+import { useNavigate, useParams } from 'react-router-dom'
 import './index.scss'
+import { Rating } from '@mui/material'
+
+function GalleryItem({productId}) {
+    const navigate = useNavigate();
+    const product = allProducts.filter((product) => product.id === productId)[0];
+
+    return (
+        <Card className='product-card mx-3 mb-3' onClick={() => navigate(`/product/${product.id}`)}>
+            <Card.Img className='product-card-img' src={product.images[0]} />
+            <Card.Body className='d-flex flex-column justify-content-start'>
+                <Card.Title className='product-name fs-6'>{product.name}</Card.Title>
+                <div className='d-flex align-items-center product-rating'>
+                    <Rating value={product.rating} precision={0.1} readOnly/>
+                    <span className='ps-1'>{product.rating}</span>
+                </div>
+                <div className='d-flex mt-auto align-items-end'>
+                <Card.Text className='pricetag fw-bold mb-0'>${product.price.toFixed(2)}</Card.Text>
+                </div>
+                
+            </Card.Body>
+        </Card>
+    )
+}
 
 function BlogPost() {
     const { postId } = useParams();
@@ -97,6 +121,19 @@ function BlogPost() {
                     <h2 className='fw-bolder mb-2 mt-2'>Conclusion</h2>
                     <p className='fs-5 mb-4 blog-content'>{post.conclusion}</p>
                 </section>
+                {post.recommendedProducts && 
+                <section>
+                    <h2 className='fw-bolder mb-2 mt-2'>Recommended products</h2>
+                    <Container>
+                        <Row>
+                            {post.recommendedProducts.map((product) => 
+                            <Col lg={4}>
+                            <GalleryItem productId={product}/>
+                            </Col>)}
+                        </Row>
+                    </Container>
+                </section>}
+                
             </article>
         </Col>
         </Row>

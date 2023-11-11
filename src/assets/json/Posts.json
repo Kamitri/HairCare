@@ -11,6 +11,10 @@
         "title": "Dealing with Hair Loss: Causes And Solutions",
         "image": "/img/hair-problems/hair-loss.jpg",
         "introduction": "Hair loss is a common concern that affects millions of people worldwide. It can be a source of distress, affecting self-esteem and confidence. However, it's essential to understand that there are various causes and solutions for hair loss. In this blog, we will explore the causes of hair loss, different treatment options, and strategies to boost your confidence while dealing with this issue.",
+        "recommendedProducts": [
+            "head-and-shoulders-supreme-hydrating-scalp-serum",
+            "Loreal-ElviveDreamSerum",
+            "Loreal-ElviveDreamOil"],
         "content": [
             {"type": "section", "content": [
                 {"type": "heading", "content": "The Complexity of Hair Loss"},
@@ -82,6 +86,10 @@
         "title": "Silver Strands: Is gray hair a cause for concern?",
         "image": "/img/hair-problems/gray-hair.jpg",
         "introduction": "Gray hair, an undeniable sign of the inexorable march of time, is a phenomenon that universally touches every individual. It's a reality that we must all face, whether we like it or not. In this blog, we will delve into the complex world of gray hair, exploring the scientific aspects of this natural occurrence, understanding its various causes, and discussing the available solutions. While it's not always a welcomed companion, gray hair also has its unique charm and can be a badge of wisdom and experience.",
+        "recommendedProducts": [
+            "Loreal-ElviveDreamMask",
+            "Loreal-ElviveDreamSerum",
+            "Loreal-ElviveDreamOil"],
         "content": [
             {"type": "section", "content": [
                 {"type": "heading", "content": "The Dual Nature of Gray Hair"},
@@ -155,6 +163,10 @@
         },
         "title": "Premature Baldness: Causes, Challenges, and Solutions",
         "image": "/img/hair-problems/premature-baldness.jpg",
+        "recommendedProducts": [
+            "Loreal-ElviveDreamCream",
+            "Loreal-ElviveDreamOil",
+            "head-and-shoulders-royal-oils-conditioner"],
         "introduction": "Premature baldness, an unwelcome and often distressing reality for those who experience it, is a condition that can significantly impact one's self-esteem and confidence. In this blog, we will dive into the complex world of premature baldness, dissecting the scientific aspects of this condition, exploring its multifaceted causes, and discussing the available solutions. While it's a challenge that many would rather avoid, dealing with premature baldness can also be an opportunity to embrace one's unique appearance and find confidence from within.",
         "content": [
             {"type": "section", "content": [
@@ -223,6 +235,10 @@
         },
         "title": "Everything you need to know about growth-related hair problems",
         "image": "/img/hair-problems/growth-related.jpg",
+        "recommendedProducts": [
+            "Loreal-ElviveDreamShampoo",
+            "head-and-shoulders-royal-oils-scalp-cream",
+            "head-and-shoulders-royal-oils-conditioner"],
         "introduction": "Hair problems related to growth can be a significant source of frustration and insecurity for many individuals. In this blog, we will venture into the intricate realm of hair growth issues, exploring the science that underlies these problems, examining the myriad causes, and discussing viable solutions. While dealing with hair growth issues can be a struggle, it's also an opportunity to gain a deeper understanding of your unique hair journey and to uncover strategies for encouraging healthy growth.",
         "content": [
             {"type": "section", "content": [
@@ -258,7 +274,7 @@
             {"type": "ordered-list", "content": [
                 {
                     "title": "Nutrient-Packed Hair Care Products",
-                    "content": "Choose hair care products enriched with essential nutrients like biotin, keratin, and vitamins. Products such as OGX Thick & Full Biotin & Collagen Shampoo and Conditioner provide a nourishing foundation for healthier hair growth."}, {
+                    "content": "Choose hair care products enriched with essential nutrients like biotin, keratin, and vitamins. Products such as L'Oreal Paris Elvive Dream Lengths Restoring Shampoo provide a nourishing foundation for healthier hair growth."}, {
         
                     "title": "Regular Scalp Massages",
                     "content": "Stimulate blood circulation to the hair follicles through regular scalp massages. Use your fingertips to gently massage the scalp, promoting nutrient delivery to the hair roots."}, {
@@ -273,7 +289,7 @@
                     "content": "Minimize stress on your hair by avoiding tight hairstyles that pull on the scalp. Opt for loose styles to prevent unnecessary strain on the hair follicles."}, {
 
                     "title": "Scalp Exfoliation",
-                    "content": "Promote a healthy scalp environment by incorporating scalp exfoliation into your routine. Products like Paul Mitchell Tea Tree Scalp Care Anti-Thinning Root Lift Foam can help cleanse and invigorate the scalp."}, {
+                    "content": "Promote a healthy scalp environment by incorporating scalp exfoliation into your routine. Products like Head & Shoulders Royal Oils Scalp Cream can help cleanse and invigorate the scalp."}, {
 
                     "title": "Consultation with a Trichologist",
                     "content": "If you notice persistent issues with hair growth, consult a trichologist or dermatologist for a professional evaluation. They can identify underlying causes and recommend tailored solutions."}, {
@@ -304,6 +320,10 @@
         },
         "title": "The Dandruff Dilemma And Learn How To Cure It",
         "image": "/img/hair-problems/dandruff.webp",
+        "recommendedProducts": [
+            "head-and-shoulders-royal-oils-scalp-cream",
+            "head-and-shoulders-clinical-dandruff-defense-intensive-itch-shampoo",
+            "head-and-shoulders-clinical-dandruff-defense-advanced-oil-control-shampoo"],
         "introduction": "Dandruff, an often underestimated hair problem, can be a constant source of annoyance and embarrassment. In this blog, we'll unravel the intricate world of dandruff, exploring the underlying science, identifying the root causes, and presenting effective solutions. While dandruff is a common and pesky issue, it's also an opportunity to gain insights into hair and scalp health and discover strategies to bid farewell to those unwelcome flakes.",
         "content": [
             {"type": "section", "content": [
