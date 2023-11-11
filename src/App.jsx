@@ -18,6 +18,7 @@ import 'aos/dist/aos.css';
 import { useEffect, useState } from 'react';
 import ComparisonContext from './components/ComparisonContext';
 import CartContext from './components/CartContext'
+import ScrollToTop from 'react-scroll-up';
 
 function App() {
 	const [comparisonList, setComparisonList] = useState([]);
@@ -55,6 +56,9 @@ function App() {
       				<Footer></Footer>
 			 	</ComparisonContext.Provider>
 			</CartContext.Provider>
+			<ScrollToTop showUnder={100}>
+				<img style={{maxWidth: '30px'}} src='/scroll-up.png' alt="Arrow pointing up for scrolling back to top"/>
+			</ScrollToTop>
 		</div>
 	);
 }
