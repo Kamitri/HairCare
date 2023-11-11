@@ -41,7 +41,7 @@ function CustomerInfo({ total }) {
                 </Col>
                 <Col md={4}>
                     <Form.Label for="phoneNumber">Phone Number</Form.Label>
-                    <Form.Control type="tel" name="phoneNumber" id="phoneNumber" required />
+                    <Form.Control type="tel" name="phoneNumber" id="phoneNumber" pattern="^(\(\d{3}\)|\d{3})-?\d{3}-?\d{4}$" required />
                 </Col>
             </Row>
             <Row className='my-3'>
