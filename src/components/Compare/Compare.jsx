@@ -13,10 +13,11 @@ function ComparisonTable({comparisonList}) {
             <th style={{width: '35%'}}>Title</th>
             <th style={{width: '25%'}}>Preview</th>
             <th style={{width: '5%'}}>Category</th>
-            <th style={{width: '10%'}}>Price</th>
+            <th style={{width: '5%'}}>Price</th>
             <th style={{width: '5%'}}>Rating</th>
             <th style={{width: '5%'}}>Weight (if any)</th>
             <th style={{width: '5%'}}>Volume (if any)</th>
+            <th style={{width: '5%'}}>Stock</th>
         </thead>
         <tbody>
             {comparisonList.map((product) =>
@@ -33,6 +34,7 @@ function ComparisonTable({comparisonList}) {
                 }</td>
                 <td>{product.specifications.filter((spec) => spec[0] === 'Volume')[0] !== undefined ? product.specifications.filter((spec) => spec[0] === 'Volume')[0][1] : null
                 }</td>
+                <td>{product.inStock}</td>
             </tr>
             )}
         </tbody>
