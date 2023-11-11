@@ -9,7 +9,6 @@ function CustomerInfo({ total }) {
     function handleFormSubmit(e) {
         const formData = new FormData(e.target),
         formDataObj = Object.fromEntries(formData.entries());
-        console.log(formDataObj);
         let msg = "Your purchase order totaling $" + total + " has been successfully processed!\n" + "Your name: " + formDataObj.lastName + " " + formDataObj.firstName + "\n";
         if (formDataObj.email !== "")
             msg += "Email: " + formDataObj.email + "\n";
@@ -21,11 +20,11 @@ function CustomerInfo({ total }) {
         <Form class="container needs-validation" onSubmit={handleFormSubmit}>
             <Row className='mb-3'>
                 <Col md={4}>
-                    <Form.Label for="firstName">First name</Form.Label>
+                    <Form.Label for="firstName">First name (*)</Form.Label>
                     <Form.Control type="text" name="firstName" id="firstName" required />
                 </Col>
                 <Col md={4}>
-                    <Form.Label for="lastName">Last name</Form.Label>
+                    <Form.Label for="lastName">Last name (*)</Form.Label>
                     <Form.Control type="text" name="lastName" id="lastName" required />
                 </Col>
                 <Col md={4}>
@@ -36,11 +35,11 @@ function CustomerInfo({ total }) {
 
             <Row className='my-3'>
                 <Col md={8}>
-                    <Form.Label for="address">Address</Form.Label>
+                    <Form.Label for="address">Address (*)</Form.Label>
                     <Form.Control type="text" name="address" id="address" required />
                 </Col>
                 <Col md={4}>
-                    <Form.Label for="phoneNumber">Phone Number</Form.Label>
+                    <Form.Label for="phoneNumber">Phone Number (*)</Form.Label>
                     <Form.Control type="tel" name="phoneNumber" id="phoneNumber" pattern="^(\(\d{3}\)|\d{3})-?\d{3}-?\d{4}$" required />
                 </Col>
             </Row>

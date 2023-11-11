@@ -1,9 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './index.scss'
 import {FaMapLocation, FaEnvelope, FaPhone} from 'react-icons/fa6'
 import { Card, Col, Container, Form, Row } from 'react-bootstrap'
 
 function ContactUs() {
+    const [ justSentMessage, setJustSentMessage ] = useState(false);
+    const [ userName, setUserName ] = useState(null);
+    function handleSendMessage(e) {
+        e.preventDefault();
+        const formData = new FormData(e.target),
+        formDataObj = Object.fromEntries(formData.entries());
+        setUserName(formDataObj.name)
+        setJustSentMessage(true);
+        let x = document.getElementById('contact-us-name');
+        x.value = '';
+        x = document.getElementById('contact-us-email');
+        x.value = ''; 
+        x = document.getElementById('contact-us-subject');
+        x.value = ''; 
+        x = document.getElementById('contact-us-message');
+        x.value = '';  
+    }
   return (
     <main id="contact" className="contact pt-3">
         <Container>
@@ -14,29 +31,27 @@ function ContactUs() {
             </Row>
             <Row>
                 <Col className='mb-3' md={6} lg={7} data-aos='fade-right'>
-                    <Form className='form-contact-us'>
+                    <Form className='form-contact-us' onSubmit={handleSendMessage}>
                         <Row>
                             <Col>
-                                <Form.Label>Name</Form.Label>
-                                <Form.Control type="text" placeholder="Enter your name" required/>
+                                <Form.Label>Name (*)</Form.Label>
+                                <Form.Control id='contact-us-name' name='name' type="text" placeholder="Enter your name" required/>
                             </Col>
                             <Col>
                                 <Form.Label>Email address</Form.Label>
-                                <Form.Control type="email" placeholder="Enter email" />
+                                <Form.Control id='contact-us-email' name='email' type="email" placeholder="Enter email" />
                             </Col>
                         </Row>
                         <Form.Group>
-                            <Form.Label>Subject</Form.Label>
-                            <Form.Control type="text" placeholder="Title of your message" required/>
+                            <Form.Label>Subject (*)</Form.Label>
+                            <Form.Control id='contact-us-subject' name='subject' type="text" placeholder="Title of your message" required/>
                         </Form.Group>
                         <Form.Group>
-                            <Form.Label>Message</Form.Label>
-                            <Form.Control type="textarea" placeholder="Content of your message" required/>
+                            <Form.Label>Message (*)</Form.Label>
+                            <Form.Control id='contact-us-message' name='message' as="textarea" rows={3} placeholder="Content of your message" required/>
                         </Form.Group>
-                        {false && <div className="my-3">
-                          <div className="loading">Loading</div>
-                          <div className="error-message"></div>
-                          <div className="sent-message">Your message has been sent. Thank you!</div>
+                        {justSentMessage && <div className="my-3">
+                          <div className="sent-message">Thank you for your feedback, {<b>{userName}</b>}!</div>
                         </div>}
                         <div className="text-center pt-3"><button className='btn-stylized rounded py-1 px-3' type="submit">Send Message</button></div>
                     </Form>
