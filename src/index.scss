@@ -108,6 +108,9 @@ body {
     }
 }
 
+.badge.bg-success {
+  background-color: $primary !important;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

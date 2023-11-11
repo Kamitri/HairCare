@@ -1,10 +1,11 @@
 import React, { useContext, useState } from 'react'
 import { Badge, Col, Container, Image, Row, Tab, Tabs } from 'react-bootstrap'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import productList from '../../assets/json/Products.json'
 import ImageGallery from 'react-image-gallery'
 import { Rating } from '@mui/material';
 import './index.scss'
+import allBrands from '../../assets/json/Brands.json'
 import CartContext from '../CartContext'
 
 
@@ -147,7 +148,10 @@ function Product() {
                         <ImageGallery items={images} slideInterval={4000} autoPlay={true} />
                     </Col>
                     <div className="col-md-6">
-                        <h1 className="fw-bold">{product.name}</h1>
+                        <h1 className="fw-bold mb-1">{product.name}</h1>
+                        <div className='mb-2'>
+                            <Link className='link-visit-store' to={`/brand/${allBrands.filter((brand) => brand.name === product.brand)[0].id}`}>Visit the {product.brand} store</Link>
+                        </div>
                         <Badge pill bg='secondary'>{product.inStock !== 0 ? product.inStock + " in stock" : "Out of stock"}</Badge>
                         {product.featured && 
                         <Badge pill className='ms-2' bg='success'>Featured Product</Badge>}
