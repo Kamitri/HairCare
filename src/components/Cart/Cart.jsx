@@ -46,7 +46,7 @@ function CustomerInfo({ total }) {
             </Row>
             <Row className='my-3'>
                 <Col>
-                    <button className="btn-stylized rounded px-2 py-1" type="submit">Submit form</button>
+                    <button className="btn-stylized rounded px-2 py-1" type="submit">Continue purchase</button>
                 </Col>
             </Row>
         </Form>
