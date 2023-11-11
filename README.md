@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Kamitri/HairCare/blob/master/public/logo.png">
-    <img src="https://raw.githubusercontent.com/Kamitri/HairCare/master/public/logo.png?token=GHSAT0AAAAAACJNZQL6RORQPN7CHTNQRF3MZKPMBTQ" alt="Logo" width="230" height="80">
+    <img src="https://raw.githubusercontent.com/Kamitri/HairCare/master/public/logo.png" alt="Logo" width="230" height="80">
   </a>
 
   <h3 align="center">HairCare</h3>
