@@ -63,7 +63,14 @@ function Product() {
         const productInCart = newShoppingCart.filter((product) => product.id === productId);
         if (productInCart.length !== 0) {
             newShoppingCart = newShoppingCart.filter((product) => product.id !== productId);
-            newShoppingCart.push({'id': productId, 'quantity': productInCart[0].quantity + productQuantity})
+            // If number added to cart exceeds max product (products in stock), set to equal to max
+            if (productInCart[0].quantity + productQuantity > product.inStock) {
+                newShoppingCart.push({'id': productId, 'quantity': product.inStock})
+            }
+            else {
+                newShoppingCart.push({'id': productId, 'quantity': productInCart[0].quantity + productQuantity})
+            }
+            
         }
         else {
             newShoppingCart.push({'id': productId, 'quantity': productQuantity})
@@ -102,6 +109,8 @@ function Product() {
                             <button className="btn-stylized px-4 py-1" onClick={handleAddToCart}>
                                 Add to cart
                             </button>
+                            {shoppingCart.filter((product) => product.id === productId).length > 0 && 
+                            <button disabled className="btn-stylized-static px-4 py-1 ms-3">{shoppingCart.filter((product) => product.id === productId)[0].quantity} in cart</button>}
                         </div>:
                         <h4>Not available for purchase.</h4>}
                         
