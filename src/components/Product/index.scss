@@ -1,2 +1,23 @@
 @import '../../App.scss';
 @import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+.product-details-img {
+    display: block;
+    margin: auto;
+    width: 50% !important;
+}
+
+@media only screen and (max-width: 992px) {
+    .product-details-img {
+        width: 80% !important;
+    }
+ }
+
+.nav-tabs .nav-item .nav-link {
+    color: $bg !important;
+
+    &.active {
+        color: $tertiary !important;
+    }
+}
+

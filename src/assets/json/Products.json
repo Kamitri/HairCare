@@ -16,6 +16,23 @@
         ],
         "manual": "/manual/HP8401-00.pdf",
         "desc": "Straighten and style your hair with this easy-to-use Philips straightener. This product makes styling at home quick and convenient. Look your best for all those important selfie moments. ",
+        "content": [
+            {"type": "heading+image+p", "heading": "Keratin infusion for better care",
+            "image": "https://philipspersonalcare.com.pk/wp-content/uploads/2022/04/HP8401_00_highlights_01-300x170.webp", "p": "Keratin is the hair’s essential ingredient which makes them strong, healthy and gorgeous looking. The ceramic is enriched with keratin to even better take care of your hair."
+            },
+            {"type": "heading+image+p", "heading": "Fast heat up time, ready to use in 60 seconds",
+            "image": "https://philipspersonalcare.com.pk/wp-content/uploads/2022/04/HP8401_00_highlights_02.webp", "p": "The straightener has a fast heat-up time, being ready to use in 60 seconds."
+            },
+            {"type": "heading+image+p", "heading": "210°C professional temperature for perfect salon results",
+            "image": "https://philipspersonalcare.com.pk/wp-content/uploads/2022/04/HP8401_00_highlights_03.webp", "p": "This styling temperature enables you change the shape of your hair, and gives you that perfect look like you’ve just come from the salon."
+            },
+            {"type": "heading+image+p", "heading": "Cool Tip to easily create curls and waves",
+            "image": "https://philipspersonalcare.com.pk/wp-content/uploads/2022/04/HP8401_00_highlights_04.webp", "p": "The tip of the styler is made from a special heat insulating material to keep it cool. You can safely hold it while you’re curling to create beautiful curls, waves and bouncy styles."
+            },
+            {"type": "heading+image+p", "heading": "A useful swivel cord rotates and prevents tangled wires",
+            "image": "https://philipspersonalcare.com.pk/wp-content/uploads/2022/04/HP8401_00_highlights_05.webp", "p": "The swivel cord technology conveniently rotates the cord and prevents unnecessary tangles."
+            }
+        ],
         "rating": 4.1,
         "specifications": [
             ["Manufacturer", "PHILIPS"],
@@ -40,6 +57,31 @@
         ],
         "manual": "/manual/HP8108-00.pdf",
         "desc": "2 flexible speed settings for gentle drying\nFoldable handle for easy storage\nNarrow concentrator for focused airflow and cool air setting for extra gentle drying\nCompact design for easy handling and 1.5 meter cord for maximum flexibility\n1000W Power for gentle drying and 2 years of worldwide guarantee",
+        "content": [
+            {"type": "heading", "heading": "Easily dry and style your hair"},
+            {"type": "paragraph", "heading": "This Philips Essential hairdryer packs the perfect balance of drying and styling power. The dryer is compact and can easily be used at home or taken on the road. Get the beautiful and gentle results you desire, wherever you go."},
+            {"type": "heading+image+p", "heading": "1000W power for gentle drying.",
+            "image": "https://philipspersonalcare.com.pk/wp-content/uploads/2022/04/HP8108_00_highlights_01.webp", "p": "This Philips DryCare 1000W hairdryer creates the optimal level of airflow and gentle drying for beautiful results everyday."
+            },
+            {"type": "heading+image+p", "heading": "2 flexible speed settings for gentle drying",
+            "image": "https://philipspersonalcare.com.pk/wp-content/uploads/2022/04/HP8108_00_highlights_02.webp", "p": "This hairdryer offers 2 pre-selected speed/heat combinations to make it quick and easy to achieve the perfect style."
+            },
+            {"type": "heading+image+p", "heading": "Foldable handle for easy storage",
+            "image": "https://philipspersonalcare.com.pk/wp-content/uploads/2022/04/HP8108_00_highlights_03.webp", "p": "This hairdryer has foldable handle, making it easy to pack, store and take with you anywhere you go."
+            },
+            {"type": "heading+image+p", "heading": "Narrow concentrator for focused airflow",
+            "image": "https://philipspersonalcare.com.pk/wp-content/uploads/2022/04/HP8108_00_highlights_04.webp", "p": "The concentrator focuses airflow through the opening to specific areas. This results in better touch-ups or more precise styling to finish your look."
+            },
+            {"type": "heading+image+p", "heading": "Compact design for easy handling",
+            "image": "https://philipspersonalcare.com.pk/wp-content/uploads/2022/04/HP8108_00_highlights_05.webp", "p": "Compact and ergonomic, this hairdryer benefits from a clever modern design. This results in a dryer that is light and easy to handle yet small enough to store virtually anywhere."
+            },
+            {"type": "heading+image+p", "heading": "2 years of worldwide guarantee",
+            "image": "https://philipspersonalcare.com.pk/wp-content/uploads/2022/04/HP8108_00_highlights_06.webp", "p": "2 years of worldwide guarantee."
+            },
+            {"type": "heading+image+p", "heading": "Cool air setting for extra gentle drying",
+            "image": "https://philipspersonalcare.com.pk/wp-content/uploads/2022/04/HP8108_00_highlights_07.webp", "p": "The cool air setting allows you to dry your hair at a more caring temperature, perfect for gentle drying and minimizing damage during the hot summer seasons"
+            }
+        ],
         "rating": 4.4,
         "specifications": [
             ["Manufacturer", "Phillips Norelco"],
@@ -502,6 +544,18 @@
         ],
         "manual": "Rub 3 or 4 drops on hair, Apply evenly through wet or dry hair, Apply before shampoo to nourish, before styling to protect and transform, or as a finishing touch for sumptuous softness.",
         "desc": "Dry hair can lack nourishment leaving it feeling rough, dull and lifeless. Now bathe your hair in luxurious , oil-rich formulas for hair that feels nourished from root to tip with the Elvive Extraordinary Oil range. Nourish your dry hair with Elvive Extraordinary Oil. Use Elvive Extraordinary Oil alongside the nourishing shampoo, conditioner and hair mask. Elvive Extraordinary Oil is a hair care product designed for use by all hair types. Enriched with a precious blend of 6 flower extracts the non-greasy feel formula leaves hair looking soft, shiny and Weightless. The product is ultra versatile: It can be used before shampooing for nourishment, before styling to help protect and transform your hair, or as a finishing touch for exceptional shine. This product offers heat protection for up to 230°C.",
+        "content": [{"type": "unordered-list", "content": [
+            {
+                "content": "Elvive Extraordinary Oil for dry hair that lacks nourishment making hair feel rough, dull and lifeless, Luxurious, oil-rich formula nourishes from root to tip "}, {
+    
+                "content": "Leaves your hair feeling beautifully nourished, soft and supple, Weightless finishing touch designed for use by all hair types "}, {
+                
+                "content": "Non greasy formula made with luxurious oils: 6 flower oil extracts with nourishing properties for luxurious shine & no flyaways, Heat protection from up to 230°C protection "}, {
+                
+                "content": "Contents: 1x L'Oreal Hair Oil, by Elvive Extraordinary Oil, For Dry to Very Dry Hair, Volume: 100ml "}
+            ]}, 
+            {"type": "image", "content": "https://www.lorealparis.com.vn/-/media/project/loreal/brand-sites/oap/apac/in/banners/hair-care/haircare_extraordinary-oil.jpg?rev=f027dce84cfc45318ab9ef3e11b47263&cx=0.03&cy=0.58&cw=1440&ch=1440&hash=F0DF5A0E989EDEF700843BAB2A13E53A20197296"}
+        ],
         "rating": 4.5,
         "specifications": [
             ["Manufacturer", " L'Oreal Paris"],
