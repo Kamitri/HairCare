@@ -27,10 +27,10 @@ function Brand() {
 
     return (
     <main>
-        <header className="bg-light border-bottom py-2 mb-3">
-            <div className="text-center my-3 mx-5">
+        <header className='bg-light border-bottom py-2 mb-3'>
+            <div className='text-center my-3 mx-5'>
                 <img className='brand-logo h-auto mb-3' src={brand.logo} alt={brand.name + ' logo'}/>
-                <p className="lead mb-0">{brand.desc}</p>
+                <p className='lead mb-0'>{brand.desc}</p>
             </div>
         </header>
 

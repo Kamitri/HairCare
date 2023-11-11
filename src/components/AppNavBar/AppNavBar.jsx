@@ -18,7 +18,6 @@ function AppNavBar() {
                 <Navbar.Collapse id="app-navbar">
                     <Nav className='me-5' style={{gap: "5vh"}}>
                     <Link className={'nav-item nav-link ' + (location.pathname === '/' ? "link-active" : '')} to="/">HOME</Link>
-                    <Link className={"nav-item nav-link " + (location.pathname === '/blog' ? "link-active" : '')} to="/blog">BLOG</Link>
                     <NavDropdown className={location.pathname.includes('/products') ? "link-active" : ''} title='STORE'>
                         <NavDropdown.Item as={Link} to={'/products'} >All Products</NavDropdown.Item>
                         <NavDropdown.Item as={Link} to={'/products/hair-cream'} >Hair cream</NavDropdown.Item>
@@ -35,6 +34,7 @@ function AppNavBar() {
                         <NavDropdown.Item as={Link} to={'/products/massager'} >Massager</NavDropdown.Item>
                         <NavDropdown.Item as={Link} to={'/products/spa-cap'} >Spa caps</NavDropdown.Item>
                     </NavDropdown>
+                    <Link className={"nav-item nav-link " + (location.pathname === '/blog' ? "link-active" : '')} to="/blog">BLOG</Link>
                     <NavDropdown className={location.pathname.includes('/brand') ? "link-active" : ''} title='BRANDS'>
                         <NavDropdown.Item as={Link} to={'/brand/hair-care-manufacturing'}>HairCare Manufacturing</NavDropdown.Item>
                         <NavDropdown.Item as={Link} to={'/brand/loreal'}>L'Oréal</NavDropdown.Item>

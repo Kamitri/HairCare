@@ -5,16 +5,25 @@
 }
 
 a {
-    text-decoration: none !important;
-}
+    text-decoration: inherit !important;
+}   
 
 
 .navbar-nav {
     align-content: space-between;
 }
 
-.nav-item.nav-link {
-    color: white;
+
+.nav-item {
+    color: white !important;
+
+    &.link-active {
+        color: $tertiary !important;
+        
+        .nav-link {
+            color: $tertiary !important;
+        }
+    }
 }
 
 .dropdown-toggle.nav-link {
