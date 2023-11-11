@@ -145,7 +145,7 @@ function Product() {
             <Container className="px-4 my-5">
                 <Row className="gx-4 align-items-center">
                     <Col md={6}>    
-                        <ImageGallery items={images} slideInterval={4000} autoPlay={true} />
+                        <ImageGallery items={images} slideInterval={4000} autoPlay={true} useBrowserFullscreen={false} />
                     </Col>
                     <div className="col-md-6">
                         <h1 className="fw-bold mb-1">{product.name}</h1>
