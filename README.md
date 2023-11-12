@@ -18,7 +18,7 @@
     <a href="https://hair-care-kamitri.vercel.app/"><strong>Explore the Demo »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">Video (unavailable)</a> 
+    <a href="https://youtu.be/XrKfDENHOSw">Video</a> 
   </p>
 </div>
 
