@@ -10,6 +10,15 @@ function SortFilterOption({ productData, setProductList }) {
     const [maxPriceQuery, setMaxPriceQuery] = useState(null);
     const [ratingQuery, setRatingQuery] = useState(0.0);
     const [sortBy, setSortBy] = useState('');
+
+    useEffect(() => {
+        setMinPriceQuery(null);
+        setMaxPriceQuery(null);
+        setRatingQuery(0.0);
+        setSortBy('');
+        setNameQuery('');
+    }, [productData])
+
     useEffect(() => {
         // Filtering
         let newProductList = [...productData];
@@ -60,8 +69,8 @@ function SortFilterOption({ productData, setProductList }) {
                 <Col>
                     <Card className='mb-4'>
             <Card.Header>Filter Results</Card.Header>
-            <select onChange={handleSortByChange} name='products-filter' id='products-filter'>
-                <option disabled selected value>-- Select an option --</option>
+            <select onChange={handleSortByChange} value={sortBy} name='products-filter' id='products-filter'>
+                <option disabled selected value=''>-- Select an option --</option>
                 <optgroup label='Price'>
                     <option key='price-ascending' value='price-ascending'>Price Ascending</option>
                     <option key='price-descending' value='price-descending'>Price Descending</option>
