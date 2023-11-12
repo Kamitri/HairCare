@@ -5,8 +5,7 @@ export default function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    const element = document.getElementById('app-navbar');
-    element.scrollIntoView();
+    window.scrollTo(0, 0);
   }, [pathname]);
 
   return null;

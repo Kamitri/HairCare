@@ -97,6 +97,12 @@ function BlogHome() {
         setMaxPage(Math.ceil(postData.length / 5))
     }, [postData])
 
+    useEffect(() => {
+        setTimeout(()=>{
+            window.scrollTo(0, 200);
+           }, 50)
+    }, [currentPage])
+
     function handlePostTitleSearchChange(event) {
         setPostTitleSearch(event.target.value);
     } 

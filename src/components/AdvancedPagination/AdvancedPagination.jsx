@@ -5,7 +5,6 @@ import { Pagination, Stack } from 'react-bootstrap'
 function AdvancedPagination({ currentPage, setCurrentPage, maxPage }) {
     function setCurrentPageAndScrollToTop(page) {
         setCurrentPage(page);
-        window.scrollTo(0, 0);
     }
     return (
     <Pagination>
